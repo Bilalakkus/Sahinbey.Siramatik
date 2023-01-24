@@ -45,14 +45,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.lblDurum = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.txtGecenSüre = new System.Windows.Forms.TextBox();
             this.txtTransfer = new System.Windows.Forms.TextBox();
             this.txtAlinmaSaati = new System.Windows.Forms.TextBox();
@@ -65,6 +64,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -97,10 +97,11 @@
             // lblCagrilan
             // 
             this.lblCagrilan.AutoSize = true;
+            this.lblCagrilan.BackColor = System.Drawing.Color.Red;
             this.lblCagrilan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCagrilan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCagrilan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblCagrilan.Location = new System.Drawing.Point(1006, 137);
+            this.lblCagrilan.ForeColor = System.Drawing.Color.White;
+            this.lblCagrilan.Location = new System.Drawing.Point(989, 137);
             this.lblCagrilan.Name = "lblCagrilan";
             this.lblCagrilan.Size = new System.Drawing.Size(30, 23);
             this.lblCagrilan.TabIndex = 10;
@@ -109,10 +110,11 @@
             // lblBekleyen
             // 
             this.lblBekleyen.AutoSize = true;
+            this.lblBekleyen.BackColor = System.Drawing.Color.Red;
             this.lblBekleyen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblBekleyen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblBekleyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblBekleyen.Location = new System.Drawing.Point(1006, 111);
+            this.lblBekleyen.ForeColor = System.Drawing.Color.White;
+            this.lblBekleyen.Location = new System.Drawing.Point(989, 111);
             this.lblBekleyen.Name = "lblBekleyen";
             this.lblBekleyen.Size = new System.Drawing.Size(30, 23);
             this.lblBekleyen.TabIndex = 9;
@@ -121,11 +123,12 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(839, 137);
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(828, 137);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(161, 23);
             this.label10.TabIndex = 8;
@@ -134,11 +137,12 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(839, 111);
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(828, 111);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(161, 23);
             this.label9.TabIndex = 7;
@@ -152,7 +156,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(10, 11);
+            this.button1.Location = new System.Drawing.Point(10, 9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 178);
             this.button1.TabIndex = 6;
@@ -164,7 +168,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(384, 91);
+            this.label3.Location = new System.Drawing.Point(384, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(270, 30);
             this.label3.TabIndex = 3;
@@ -177,7 +181,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Constantia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(250, 33);
+            this.label1.Location = new System.Drawing.Point(250, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(556, 59);
             this.label1.TabIndex = 1;
@@ -245,9 +249,9 @@
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.Location = new System.Drawing.Point(384, 190);
+            this.groupBox4.Location = new System.Drawing.Point(384, 270);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(656, 490);
+            this.groupBox4.Size = new System.Drawing.Size(656, 410);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "İşlem Yapılan Bilet Bilgileri";
@@ -260,35 +264,20 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(574, 325);
+            this.button6.Location = new System.Drawing.Point(574, 283);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(58, 57);
             this.button6.TabIndex = 13;
             this.button6.Text = "Bekleme Listesi";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(261, 28);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(58, 57);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Bekleme Al";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 325);
+            this.dataGridView2.Location = new System.Drawing.Point(15, 283);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(553, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(553, 118);
             this.dataGridView2.TabIndex = 11;
             // 
             // groupBox5
@@ -298,21 +287,35 @@
             this.groupBox5.Controls.Add(this.button7);
             this.groupBox5.Controls.Add(this.button4);
             this.groupBox5.Controls.Add(this.button3);
-            this.groupBox5.Controls.Add(this.button2);
-            this.groupBox5.Location = new System.Drawing.Point(15, 217);
+            this.groupBox5.Location = new System.Drawing.Point(15, 191);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(617, 102);
+            this.groupBox5.Size = new System.Drawing.Size(629, 84);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
             // 
             // lblDurum
             // 
             this.lblDurum.AutoSize = true;
-            this.lblDurum.Location = new System.Drawing.Point(325, 43);
+            this.lblDurum.Location = new System.Drawing.Point(238, 35);
             this.lblDurum.Name = "lblDurum";
             this.lblDurum.Size = new System.Drawing.Size(109, 21);
             this.lblDurum.TabIndex = 13;
             this.lblDurum.Text = "Durumunuz :";
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(173, 20);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(59, 57);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "Bekleme Al";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
@@ -322,7 +325,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(197, 28);
+            this.button7.Location = new System.Drawing.Point(88, 20);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(58, 57);
             this.button7.TabIndex = 12;
@@ -337,7 +340,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(543, 28);
+            this.button4.Location = new System.Drawing.Point(558, 20);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(58, 57);
             this.button4.TabIndex = 9;
@@ -352,33 +355,18 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(118, 28);
+            this.button3.Location = new System.Drawing.Point(7, 20);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(58, 57);
             this.button3.TabIndex = 8;
             this.button3.Text = "Yenile";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(41, 28);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(58, 57);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Sıradaki";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // txtGecenSüre
             // 
             this.txtGecenSüre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGecenSüre.Enabled = false;
-            this.txtGecenSüre.Location = new System.Drawing.Point(250, 182);
+            this.txtGecenSüre.Location = new System.Drawing.Point(250, 165);
             this.txtGecenSüre.Name = "txtGecenSüre";
             this.txtGecenSüre.Size = new System.Drawing.Size(301, 29);
             this.txtGecenSüre.TabIndex = 9;
@@ -387,7 +375,7 @@
             // 
             this.txtTransfer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTransfer.Enabled = false;
-            this.txtTransfer.Location = new System.Drawing.Point(250, 147);
+            this.txtTransfer.Location = new System.Drawing.Point(250, 130);
             this.txtTransfer.Name = "txtTransfer";
             this.txtTransfer.Size = new System.Drawing.Size(301, 29);
             this.txtTransfer.TabIndex = 8;
@@ -396,7 +384,7 @@
             // 
             this.txtAlinmaSaati.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAlinmaSaati.Enabled = false;
-            this.txtAlinmaSaati.Location = new System.Drawing.Point(250, 112);
+            this.txtAlinmaSaati.Location = new System.Drawing.Point(250, 95);
             this.txtAlinmaSaati.Name = "txtAlinmaSaati";
             this.txtAlinmaSaati.Size = new System.Drawing.Size(301, 29);
             this.txtAlinmaSaati.TabIndex = 7;
@@ -405,7 +393,7 @@
             // 
             this.txtIslemNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIslemNo.Enabled = false;
-            this.txtIslemNo.Location = new System.Drawing.Point(250, 77);
+            this.txtIslemNo.Location = new System.Drawing.Point(250, 60);
             this.txtIslemNo.Name = "txtIslemNo";
             this.txtIslemNo.Size = new System.Drawing.Size(301, 29);
             this.txtIslemNo.TabIndex = 6;
@@ -414,7 +402,7 @@
             // 
             this.txtBiletNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBiletNo.Enabled = false;
-            this.txtBiletNo.Location = new System.Drawing.Point(250, 43);
+            this.txtBiletNo.Location = new System.Drawing.Point(250, 26);
             this.txtBiletNo.Name = "txtBiletNo";
             this.txtBiletNo.Size = new System.Drawing.Size(301, 29);
             this.txtBiletNo.TabIndex = 5;
@@ -422,7 +410,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(91, 182);
+            this.label8.Location = new System.Drawing.Point(91, 165);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(95, 21);
             this.label8.TabIndex = 4;
@@ -431,7 +419,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(91, 147);
+            this.label7.Location = new System.Drawing.Point(91, 130);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(110, 21);
             this.label7.TabIndex = 3;
@@ -440,7 +428,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(91, 112);
+            this.label6.Location = new System.Drawing.Point(91, 95);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(146, 21);
             this.label6.TabIndex = 2;
@@ -449,7 +437,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(91, 77);
+            this.label5.Location = new System.Drawing.Point(91, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 21);
             this.label5.TabIndex = 1;
@@ -458,7 +446,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(91, 43);
+            this.label4.Location = new System.Drawing.Point(91, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 21);
             this.label4.TabIndex = 0;
@@ -483,11 +471,27 @@
             this.dataGridView1.Size = new System.Drawing.Size(365, 399);
             this.dataGridView1.TabIndex = 0;
             // 
+            // button8
+            // 
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(945, 190);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(91, 89);
+            this.button8.TabIndex = 10;
+            this.button8.Text = "Mola";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // FrmEmploye
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1040, 755);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -537,7 +541,6 @@
         private TextBox txtAlinmaSaati;
         private TextBox txtIslemNo;
         private GroupBox groupBox5;
-        private Button button2;
         private Button button7;
         private Button button4;
         private Button button3;
@@ -551,5 +554,6 @@
         private Button button5;
         private DataGridView dataGridView2;
         private Label lblDurum;
+        private Button button8;
     }
 }
