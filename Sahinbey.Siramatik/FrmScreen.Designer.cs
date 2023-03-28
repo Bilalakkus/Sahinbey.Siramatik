@@ -40,59 +40,59 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.pnlList6 = new System.Windows.Forms.Panel();
+            this.lblList6 = new System.Windows.Forms.Label();
+            this.pnlList5 = new System.Windows.Forms.Panel();
+            this.lblList5 = new System.Windows.Forms.Label();
+            this.pnlList4 = new System.Windows.Forms.Panel();
+            this.lblList4 = new System.Windows.Forms.Label();
+            this.pnlList3 = new System.Windows.Forms.Panel();
+            this.lblList3 = new System.Windows.Forms.Label();
+            this.pnlList2 = new System.Windows.Forms.Panel();
+            this.lblList2 = new System.Windows.Forms.Label();
+            this.pnlList1 = new System.Windows.Forms.Panel();
+            this.lblList1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pnlFirst = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.pnlCallFirst = new System.Windows.Forms.Panel();
+            this.lblCallTableFirst = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblCallFirt = new System.Windows.Forms.Label();
+            this.pnlCall2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblCallTable2 = new System.Windows.Forms.Label();
+            this.lblCall2 = new System.Windows.Forms.Label();
+            this.pnlCall3 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblCallTable3 = new System.Windows.Forms.Label();
+            this.lblCall3 = new System.Windows.Forms.Label();
+            this.pnlCall4 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.lblCallTable4 = new System.Windows.Forms.Label();
+            this.lblCall4 = new System.Windows.Forms.Label();
+            this.pnlCall5 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.lblCallTable5 = new System.Windows.Forms.Label();
+            this.lblCall5 = new System.Windows.Forms.Label();
+            this.pnlCall6 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblCallTable6 = new System.Windows.Forms.Label();
+            this.lblCall6 = new System.Windows.Forms.Label();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.pnlFirst.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.pnlList6.SuspendLayout();
+            this.pnlList5.SuspendLayout();
+            this.pnlList4.SuspendLayout();
+            this.pnlList3.SuspendLayout();
+            this.pnlList2.SuspendLayout();
+            this.pnlList1.SuspendLayout();
+            this.pnlCallFirst.SuspendLayout();
+            this.pnlCall2.SuspendLayout();
+            this.pnlCall3.SuspendLayout();
+            this.pnlCall4.SuspendLayout();
+            this.pnlCall5.SuspendLayout();
+            this.pnlCall6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -203,131 +203,132 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Controls.Add(this.panel14);
-            this.panel2.Controls.Add(this.panel13);
-            this.panel2.Controls.Add(this.panel12);
-            this.panel2.Controls.Add(this.panel11);
-            this.panel2.Controls.Add(this.panel10);
-            this.panel2.Controls.Add(this.panel9);
+            this.panel2.Controls.Add(this.pnlList6);
+            this.panel2.Controls.Add(this.pnlList5);
+            this.panel2.Controls.Add(this.pnlList4);
+            this.panel2.Controls.Add(this.pnlList3);
+            this.panel2.Controls.Add(this.pnlList2);
+            this.panel2.Controls.Add(this.pnlList1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(1061, 185);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(481, 798);
+            this.panel2.Size = new System.Drawing.Size(481, 794);
             this.panel2.TabIndex = 2;
             // 
-            // panel14
+            // pnlList6
             // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel14.Controls.Add(this.label22);
-            this.panel14.Location = new System.Drawing.Point(8, 680);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(468, 97);
-            this.panel14.TabIndex = 8;
+            this.pnlList6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlList6.Controls.Add(this.lblList6);
+            this.pnlList6.Location = new System.Drawing.Point(8, 680);
+            this.pnlList6.Name = "pnlList6";
+            this.pnlList6.Size = new System.Drawing.Size(468, 97);
+            this.pnlList6.TabIndex = 8;
+            this.pnlList6.Visible = false;
             // 
-            // label22
+            // lblList6
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(179, 22);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(91, 57);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "158";
+            this.lblList6.AutoSize = true;
+            this.lblList6.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblList6.Location = new System.Drawing.Point(179, 22);
+            this.lblList6.Name = "lblList6";
+            this.lblList6.Size = new System.Drawing.Size(0, 57);
+            this.lblList6.TabIndex = 0;
             // 
-            // panel13
+            // pnlList5
             // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel13.Controls.Add(this.label21);
-            this.panel13.Location = new System.Drawing.Point(8, 562);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(468, 97);
-            this.panel13.TabIndex = 7;
+            this.pnlList5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlList5.Controls.Add(this.lblList5);
+            this.pnlList5.Location = new System.Drawing.Point(8, 562);
+            this.pnlList5.Name = "pnlList5";
+            this.pnlList5.Size = new System.Drawing.Size(468, 97);
+            this.pnlList5.TabIndex = 7;
+            this.pnlList5.Visible = false;
             // 
-            // label21
+            // lblList5
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(179, 22);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(91, 57);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "158";
+            this.lblList5.AutoSize = true;
+            this.lblList5.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblList5.Location = new System.Drawing.Point(179, 22);
+            this.lblList5.Name = "lblList5";
+            this.lblList5.Size = new System.Drawing.Size(0, 57);
+            this.lblList5.TabIndex = 0;
             // 
-            // panel12
+            // pnlList4
             // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel12.Controls.Add(this.label20);
-            this.panel12.Location = new System.Drawing.Point(11, 442);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(468, 97);
-            this.panel12.TabIndex = 6;
+            this.pnlList4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlList4.Controls.Add(this.lblList4);
+            this.pnlList4.Location = new System.Drawing.Point(11, 442);
+            this.pnlList4.Name = "pnlList4";
+            this.pnlList4.Size = new System.Drawing.Size(468, 97);
+            this.pnlList4.TabIndex = 6;
+            this.pnlList4.Visible = false;
             // 
-            // label20
+            // lblList4
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(179, 22);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(91, 57);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "158";
+            this.lblList4.AutoSize = true;
+            this.lblList4.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblList4.Location = new System.Drawing.Point(179, 22);
+            this.lblList4.Name = "lblList4";
+            this.lblList4.Size = new System.Drawing.Size(0, 57);
+            this.lblList4.TabIndex = 0;
             // 
-            // panel11
+            // pnlList3
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel11.Controls.Add(this.label19);
-            this.panel11.Location = new System.Drawing.Point(11, 324);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(468, 97);
-            this.panel11.TabIndex = 5;
+            this.pnlList3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlList3.Controls.Add(this.lblList3);
+            this.pnlList3.Location = new System.Drawing.Point(11, 324);
+            this.pnlList3.Name = "pnlList3";
+            this.pnlList3.Size = new System.Drawing.Size(468, 97);
+            this.pnlList3.TabIndex = 5;
+            this.pnlList3.Visible = false;
             // 
-            // label19
+            // lblList3
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(179, 22);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 57);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "158";
+            this.lblList3.AutoSize = true;
+            this.lblList3.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblList3.Location = new System.Drawing.Point(179, 22);
+            this.lblList3.Name = "lblList3";
+            this.lblList3.Size = new System.Drawing.Size(0, 57);
+            this.lblList3.TabIndex = 0;
             // 
-            // panel10
+            // pnlList2
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel10.Controls.Add(this.label18);
-            this.panel10.Location = new System.Drawing.Point(10, 201);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(468, 97);
-            this.panel10.TabIndex = 4;
+            this.pnlList2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlList2.Controls.Add(this.lblList2);
+            this.pnlList2.Location = new System.Drawing.Point(10, 201);
+            this.pnlList2.Name = "pnlList2";
+            this.pnlList2.Size = new System.Drawing.Size(468, 97);
+            this.pnlList2.TabIndex = 4;
+            this.pnlList2.Visible = false;
             // 
-            // label18
+            // lblList2
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(179, 22);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(91, 57);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "158";
+            this.lblList2.AutoSize = true;
+            this.lblList2.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblList2.Location = new System.Drawing.Point(179, 22);
+            this.lblList2.Name = "lblList2";
+            this.lblList2.Size = new System.Drawing.Size(0, 57);
+            this.lblList2.TabIndex = 0;
             // 
-            // panel9
+            // pnlList1
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel9.Controls.Add(this.label17);
-            this.panel9.Location = new System.Drawing.Point(8, 85);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(468, 97);
-            this.panel9.TabIndex = 3;
+            this.pnlList1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlList1.Controls.Add(this.lblList1);
+            this.pnlList1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlList1.Location = new System.Drawing.Point(8, 85);
+            this.pnlList1.Name = "pnlList1";
+            this.pnlList1.Size = new System.Drawing.Size(468, 97);
+            this.pnlList1.TabIndex = 3;
+            this.pnlList1.Visible = false;
             // 
-            // label17
+            // lblList1
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(179, 22);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(91, 57);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "158";
+            this.lblList1.AutoSize = true;
+            this.lblList1.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblList1.Location = new System.Drawing.Point(179, 22);
+            this.lblList1.Name = "lblList1";
+            this.lblList1.Size = new System.Drawing.Size(0, 57);
+            this.lblList1.TabIndex = 0;
             // 
             // label4
             // 
@@ -340,30 +341,30 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Bekleyenler";
             // 
-            // pnlFirst
+            // pnlCallFirst
             // 
-            this.pnlFirst.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlCallFirst.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlFirst.BackColor = System.Drawing.Color.Red;
-            this.pnlFirst.Controls.Add(this.label6);
-            this.pnlFirst.Controls.Add(this.button2);
-            this.pnlFirst.Controls.Add(this.label5);
-            this.pnlFirst.Location = new System.Drawing.Point(0, 269);
-            this.pnlFirst.Name = "pnlFirst";
-            this.pnlFirst.Size = new System.Drawing.Size(1062, 97);
-            this.pnlFirst.TabIndex = 3;
+            this.pnlCallFirst.BackColor = System.Drawing.Color.Red;
+            this.pnlCallFirst.Controls.Add(this.lblCallTableFirst);
+            this.pnlCallFirst.Controls.Add(this.button2);
+            this.pnlCallFirst.Controls.Add(this.lblCallFirt);
+            this.pnlCallFirst.Location = new System.Drawing.Point(0, 269);
+            this.pnlCallFirst.Name = "pnlCallFirst";
+            this.pnlCallFirst.Size = new System.Drawing.Size(1062, 97);
+            this.pnlCallFirst.TabIndex = 3;
+            this.pnlCallFirst.Visible = false;
             // 
-            // label6
+            // lblCallTableFirst
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(921, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 84);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "01";
+            this.lblCallTableFirst.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCallTableFirst.AutoSize = true;
+            this.lblCallTableFirst.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTableFirst.ForeColor = System.Drawing.Color.White;
+            this.lblCallTableFirst.Location = new System.Drawing.Point(921, 13);
+            this.lblCallTableFirst.Name = "lblCallTableFirst";
+            this.lblCallTableFirst.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTableFirst.TabIndex = 9;
             // 
             // button2
             // 
@@ -382,30 +383,30 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // lblCallFirt
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(63, 2);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 84);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "157";
+            this.lblCallFirt.AutoSize = true;
+            this.lblCallFirt.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallFirt.ForeColor = System.Drawing.Color.White;
+            this.lblCallFirt.Location = new System.Drawing.Point(63, 2);
+            this.lblCallFirt.Name = "lblCallFirt";
+            this.lblCallFirt.Size = new System.Drawing.Size(0, 84);
+            this.lblCallFirt.TabIndex = 0;
             // 
-            // panel4
+            // pnlCall2
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlCall2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel4.Location = new System.Drawing.Point(0, 384);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1062, 97);
-            this.panel4.TabIndex = 4;
+            this.pnlCall2.BackColor = System.Drawing.Color.White;
+            this.pnlCall2.Controls.Add(this.button3);
+            this.pnlCall2.Controls.Add(this.lblCallTable2);
+            this.pnlCall2.Controls.Add(this.lblCall2);
+            this.pnlCall2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlCall2.Location = new System.Drawing.Point(0, 384);
+            this.pnlCall2.Name = "pnlCall2";
+            this.pnlCall2.Size = new System.Drawing.Size(1062, 97);
+            this.pnlCall2.TabIndex = 4;
+            this.pnlCall2.Visible = false;
             // 
             // button3
             // 
@@ -424,42 +425,41 @@
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // lblCallTable2
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(921, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 84);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "02";
+            this.lblCallTable2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCallTable2.AutoSize = true;
+            this.lblCallTable2.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable2.ForeColor = System.Drawing.Color.Black;
+            this.lblCallTable2.Location = new System.Drawing.Point(921, 9);
+            this.lblCallTable2.Name = "lblCallTable2";
+            this.lblCallTable2.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable2.TabIndex = 9;
             // 
-            // label8
+            // lblCall2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(63, 2);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(134, 84);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "157";
+            this.lblCall2.AutoSize = true;
+            this.lblCall2.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCall2.ForeColor = System.Drawing.Color.Black;
+            this.lblCall2.Location = new System.Drawing.Point(63, 2);
+            this.lblCall2.Name = "lblCall2";
+            this.lblCall2.Size = new System.Drawing.Size(0, 84);
+            this.lblCall2.TabIndex = 0;
             // 
-            // panel5
+            // pnlCall3
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlCall3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.button4);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel5.Location = new System.Drawing.Point(0, 507);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1062, 97);
-            this.panel5.TabIndex = 5;
+            this.pnlCall3.BackColor = System.Drawing.Color.White;
+            this.pnlCall3.Controls.Add(this.button4);
+            this.pnlCall3.Controls.Add(this.lblCallTable3);
+            this.pnlCall3.Controls.Add(this.lblCall3);
+            this.pnlCall3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlCall3.Location = new System.Drawing.Point(0, 507);
+            this.pnlCall3.Name = "pnlCall3";
+            this.pnlCall3.Size = new System.Drawing.Size(1062, 97);
+            this.pnlCall3.TabIndex = 5;
+            this.pnlCall3.Visible = false;
             // 
             // button4
             // 
@@ -478,42 +478,41 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // lblCallTable3
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(921, 8);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 84);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "05";
+            this.lblCallTable3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCallTable3.AutoSize = true;
+            this.lblCallTable3.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable3.ForeColor = System.Drawing.Color.Black;
+            this.lblCallTable3.Location = new System.Drawing.Point(921, 8);
+            this.lblCallTable3.Name = "lblCallTable3";
+            this.lblCallTable3.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable3.TabIndex = 9;
             // 
-            // label10
+            // lblCall3
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(63, 2);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(134, 84);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "157";
+            this.lblCall3.AutoSize = true;
+            this.lblCall3.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCall3.ForeColor = System.Drawing.Color.Black;
+            this.lblCall3.Location = new System.Drawing.Point(63, 2);
+            this.lblCall3.Name = "lblCall3";
+            this.lblCall3.Size = new System.Drawing.Size(0, 84);
+            this.lblCall3.TabIndex = 0;
             // 
-            // panel6
+            // pnlCall4
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlCall4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.button5);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel6.Location = new System.Drawing.Point(0, 627);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1062, 97);
-            this.panel6.TabIndex = 6;
+            this.pnlCall4.BackColor = System.Drawing.Color.White;
+            this.pnlCall4.Controls.Add(this.button5);
+            this.pnlCall4.Controls.Add(this.lblCallTable4);
+            this.pnlCall4.Controls.Add(this.lblCall4);
+            this.pnlCall4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlCall4.Location = new System.Drawing.Point(0, 627);
+            this.pnlCall4.Name = "pnlCall4";
+            this.pnlCall4.Size = new System.Drawing.Size(1062, 97);
+            this.pnlCall4.TabIndex = 6;
+            this.pnlCall4.Visible = false;
             // 
             // button5
             // 
@@ -532,42 +531,41 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // lblCallTable4
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(921, 8);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(101, 84);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "09";
+            this.lblCallTable4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCallTable4.AutoSize = true;
+            this.lblCallTable4.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable4.ForeColor = System.Drawing.Color.Black;
+            this.lblCallTable4.Location = new System.Drawing.Point(921, 8);
+            this.lblCallTable4.Name = "lblCallTable4";
+            this.lblCallTable4.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable4.TabIndex = 9;
             // 
-            // label12
+            // lblCall4
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(63, 2);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(134, 84);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "157";
+            this.lblCall4.AutoSize = true;
+            this.lblCall4.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCall4.ForeColor = System.Drawing.Color.Black;
+            this.lblCall4.Location = new System.Drawing.Point(63, 2);
+            this.lblCall4.Name = "lblCall4";
+            this.lblCall4.Size = new System.Drawing.Size(0, 84);
+            this.lblCall4.TabIndex = 0;
             // 
-            // panel7
+            // pnlCall5
             // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlCall5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.button6);
-            this.panel7.Controls.Add(this.label13);
-            this.panel7.Controls.Add(this.label14);
-            this.panel7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel7.Location = new System.Drawing.Point(0, 747);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1062, 97);
-            this.panel7.TabIndex = 7;
+            this.pnlCall5.BackColor = System.Drawing.Color.White;
+            this.pnlCall5.Controls.Add(this.button6);
+            this.pnlCall5.Controls.Add(this.lblCallTable5);
+            this.pnlCall5.Controls.Add(this.lblCall5);
+            this.pnlCall5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlCall5.Location = new System.Drawing.Point(0, 747);
+            this.pnlCall5.Name = "pnlCall5";
+            this.pnlCall5.Size = new System.Drawing.Size(1062, 97);
+            this.pnlCall5.TabIndex = 7;
+            this.pnlCall5.Visible = false;
             // 
             // button6
             // 
@@ -586,42 +584,41 @@
             this.button6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // lblCallTable5
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(921, 8);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(101, 84);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "10";
+            this.lblCallTable5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCallTable5.AutoSize = true;
+            this.lblCallTable5.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable5.ForeColor = System.Drawing.Color.Black;
+            this.lblCallTable5.Location = new System.Drawing.Point(921, 8);
+            this.lblCallTable5.Name = "lblCallTable5";
+            this.lblCallTable5.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable5.TabIndex = 9;
             // 
-            // label14
+            // lblCall5
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(63, 2);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(134, 84);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "157";
+            this.lblCall5.AutoSize = true;
+            this.lblCall5.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCall5.ForeColor = System.Drawing.Color.Black;
+            this.lblCall5.Location = new System.Drawing.Point(63, 2);
+            this.lblCall5.Name = "lblCall5";
+            this.lblCall5.Size = new System.Drawing.Size(0, 84);
+            this.lblCall5.TabIndex = 0;
             // 
-            // panel8
+            // pnlCall6
             // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlCall6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.button7);
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Controls.Add(this.label16);
-            this.panel8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel8.Location = new System.Drawing.Point(0, 863);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1062, 97);
-            this.panel8.TabIndex = 8;
+            this.pnlCall6.BackColor = System.Drawing.Color.White;
+            this.pnlCall6.Controls.Add(this.button7);
+            this.pnlCall6.Controls.Add(this.lblCallTable6);
+            this.pnlCall6.Controls.Add(this.lblCall6);
+            this.pnlCall6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlCall6.Location = new System.Drawing.Point(0, 863);
+            this.pnlCall6.Name = "pnlCall6";
+            this.pnlCall6.Size = new System.Drawing.Size(1062, 97);
+            this.pnlCall6.TabIndex = 8;
+            this.pnlCall6.Visible = false;
             // 
             // button7
             // 
@@ -640,28 +637,26 @@
             this.button7.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // label15
+            // lblCallTable6
             // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(921, 6);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(101, 84);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "12";
+            this.lblCallTable6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCallTable6.AutoSize = true;
+            this.lblCallTable6.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable6.ForeColor = System.Drawing.Color.Black;
+            this.lblCallTable6.Location = new System.Drawing.Point(921, 6);
+            this.lblCallTable6.Name = "lblCallTable6";
+            this.lblCallTable6.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable6.TabIndex = 9;
             // 
-            // label16
+            // lblCall6
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(63, 2);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(134, 84);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "157";
+            this.lblCall6.AutoSize = true;
+            this.lblCall6.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCall6.ForeColor = System.Drawing.Color.Black;
+            this.lblCall6.Location = new System.Drawing.Point(63, 2);
+            this.lblCall6.Name = "lblCall6";
+            this.lblCall6.Size = new System.Drawing.Size(0, 84);
+            this.lblCall6.TabIndex = 0;
             // 
             // timer3
             // 
@@ -673,17 +668,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1544, 987);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pnlFirst);
+            this.ClientSize = new System.Drawing.Size(1544, 983);
+            this.Controls.Add(this.pnlCall6);
+            this.Controls.Add(this.pnlCall5);
+            this.Controls.Add(this.pnlCall4);
+            this.Controls.Add(this.pnlCall3);
+            this.Controls.Add(this.pnlCall2);
+            this.Controls.Add(this.pnlCallFirst);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmScreen";
             this.Text = "Şahinbey Belediyesi";
@@ -695,30 +690,30 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.pnlFirst.ResumeLayout(false);
-            this.pnlFirst.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.pnlList6.ResumeLayout(false);
+            this.pnlList6.PerformLayout();
+            this.pnlList5.ResumeLayout(false);
+            this.pnlList5.PerformLayout();
+            this.pnlList4.ResumeLayout(false);
+            this.pnlList4.PerformLayout();
+            this.pnlList3.ResumeLayout(false);
+            this.pnlList3.PerformLayout();
+            this.pnlList2.ResumeLayout(false);
+            this.pnlList2.PerformLayout();
+            this.pnlList1.ResumeLayout(false);
+            this.pnlList1.PerformLayout();
+            this.pnlCallFirst.ResumeLayout(false);
+            this.pnlCallFirst.PerformLayout();
+            this.pnlCall2.ResumeLayout(false);
+            this.pnlCall2.PerformLayout();
+            this.pnlCall3.ResumeLayout(false);
+            this.pnlCall3.PerformLayout();
+            this.pnlCall4.ResumeLayout(false);
+            this.pnlCall4.PerformLayout();
+            this.pnlCall5.ResumeLayout(false);
+            this.pnlCall5.PerformLayout();
+            this.pnlCall6.ResumeLayout(false);
+            this.pnlCall6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -737,36 +732,36 @@
         private Panel panel2;
         private Label label4;
         private Panel panel3;
-        private Label label5;
-        private Label label6;
+        private Label lblCallFirt;
+        private Label lblCallTableFirst;
         private Button button2;
         private Panel panel4;
-        private Label label7;
-        private Label label8;
+        private Label lblCallTable2;
+        private Label lblCall2;
         private Panel panel5;
-        private Label label9;
-        private Label label10;
+        private Label lblCallTable3;
+        private Label lblCall3;
         private Panel panel6;
-        private Label label11;
-        private Label label12;
+        private Label lblCallTable4;
+        private Label lblCall4;
         private Panel panel7;
-        private Label label13;
-        private Label label14;
+        private Label lblCallTable5;
+        private Label lblCall5;
         private Panel panel8;
-        private Label label15;
-        private Label label16;
+        private Label lblCallTable6;
+        private Label lblCall6;
         private Panel panel9;
-        private Label label17;
+        private Label lblList1;
         private Panel panel14;
-        private Label label22;
+        private Label lblList6;
         private Panel panel13;
-        private Label label21;
+        private Label lblList5;
         private Panel panel12;
-        private Label label20;
+        private Label lblList4;
         private Panel panel11;
-        private Label label19;
+        private Label lblList3;
         private Panel panel10;
-        private Label label18;
+        private Label lblList2;
         private Button button3;
         private Button button4;
         private Button button5;
@@ -774,5 +769,17 @@
         private Button button7;
         private Panel pnlFirst;
         private System.Windows.Forms.Timer timer3;
+        private Panel pnlList6;
+        private Panel pnlList5;
+        private Panel pnlList4;
+        private Panel pnlList3;
+        private Panel pnlList2;
+        private Panel pnlList1;
+        private Panel pnlCallFirst;
+        private Panel pnlCall2;
+        private Panel pnlCall3;
+        private Panel pnlCall4;
+        private Panel pnlCall5;
+        private Panel pnlCall6;
     }
 }

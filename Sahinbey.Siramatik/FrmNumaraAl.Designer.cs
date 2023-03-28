@@ -31,16 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNumaraAl));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnOncelikli = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblKayan = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnEmlak = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +51,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnOncelikli);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -60,22 +61,22 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // button1
+            // btnOncelikli
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(5, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 192);
-            this.button1.TabIndex = 6;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnOncelikli.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnOncelikli.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOncelikli.BackgroundImage")));
+            this.btnOncelikli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnOncelikli.FlatAppearance.BorderSize = 0;
+            this.btnOncelikli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOncelikli.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
+            this.btnOncelikli.ForeColor = System.Drawing.Color.White;
+            this.btnOncelikli.Location = new System.Drawing.Point(5, 12);
+            this.btnOncelikli.Name = "btnOncelikli";
+            this.btnOncelikli.Size = new System.Drawing.Size(197, 192);
+            this.btnOncelikli.TabIndex = 6;
+            this.btnOncelikli.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnOncelikli.UseVisualStyleBackColor = true;
+            this.btnOncelikli.Click += new System.EventHandler(this.btnOncelikli_Click);
             // 
             // label3
             // 
@@ -84,9 +85,10 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(257, 127);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(627, 30);
+            this.label3.Size = new System.Drawing.Size(569, 30);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Lütfen \'Sıra Numarası Al\' butonuna tıklayarak numara alınız";
+            this.label3.Text = "Lütfen işlemyapmak istediğiniz gruptan numara alınız";
+            this.label3.DoubleClick += new System.EventHandler(this.label3_DoubleClick);
             // 
             // label1
             // 
@@ -127,20 +129,21 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
-            // button3
+            // btnEmlak
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(204, 293);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(703, 176);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Emlak Beyan";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEmlak.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEmlak.BackgroundImage")));
+            this.btnEmlak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEmlak.FlatAppearance.BorderSize = 0;
+            this.btnEmlak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmlak.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
+            this.btnEmlak.ForeColor = System.Drawing.Color.White;
+            this.btnEmlak.Location = new System.Drawing.Point(204, 293);
+            this.btnEmlak.Name = "btnEmlak";
+            this.btnEmlak.Size = new System.Drawing.Size(703, 176);
+            this.btnEmlak.TabIndex = 4;
+            this.btnEmlak.Text = "Emlak Beyan";
+            this.btnEmlak.UseVisualStyleBackColor = true;
+            this.btnEmlak.Click += new System.EventHandler(this.btnEmlak_Click);
             // 
             // button4
             // 
@@ -156,6 +159,7 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "Muhasebe";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             // 
             // button5
             // 
@@ -171,6 +175,7 @@
             this.button5.TabIndex = 7;
             this.button5.Text = "Sosyal Yardım İşlemleri";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
             // 
             // button2
             // 
@@ -186,6 +191,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "Sosyal Market";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             // 
             // FrmNumaraAl
             // 
@@ -196,13 +202,14 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnEmlak);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmNumaraAl";
             this.Text = "Şahibey Belediyesi";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -220,10 +227,11 @@
         private Label label3;
         private System.Windows.Forms.Timer timer1;
         private GroupBox groupBox2;
-        private Button button3;
-        private Button button1;
+        private Button btnEmlak;
+        private Button btnOncelikli;
         private Button button4;
         private Button button5;
         private Button button2;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

@@ -101,7 +101,7 @@
             this.lblCagrilan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCagrilan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCagrilan.ForeColor = System.Drawing.Color.White;
-            this.lblCagrilan.Location = new System.Drawing.Point(989, 137);
+            this.lblCagrilan.Location = new System.Drawing.Point(985, 137);
             this.lblCagrilan.Name = "lblCagrilan";
             this.lblCagrilan.Size = new System.Drawing.Size(30, 23);
             this.lblCagrilan.TabIndex = 10;
@@ -114,7 +114,7 @@
             this.lblBekleyen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblBekleyen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblBekleyen.ForeColor = System.Drawing.Color.White;
-            this.lblBekleyen.Location = new System.Drawing.Point(989, 111);
+            this.lblBekleyen.Location = new System.Drawing.Point(985, 111);
             this.lblBekleyen.Name = "lblBekleyen";
             this.lblBekleyen.Size = new System.Drawing.Size(30, 23);
             this.lblBekleyen.TabIndex = 9;
@@ -128,11 +128,11 @@
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(828, 137);
+            this.label10.Location = new System.Drawing.Point(804, 137);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(161, 23);
+            this.label10.Size = new System.Drawing.Size(179, 23);
             this.label10.TabIndex = 8;
-            this.label10.Text = "Bekleyen Kişi Sayısı";
+            this.label10.Text = "Toplam Yapılan İşlem ";
             // 
             // label9
             // 
@@ -142,11 +142,11 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(828, 111);
+            this.label9.Location = new System.Drawing.Point(804, 111);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(161, 23);
+            this.label9.Size = new System.Drawing.Size(185, 23);
             this.label9.TabIndex = 7;
-            this.label9.Text = "Bekleyen Kişi Sayısı";
+            this.label9.Text = "Toplam Bekleyenleyen";
             // 
             // button1
             // 
