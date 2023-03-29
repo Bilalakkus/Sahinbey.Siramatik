@@ -59,5 +59,15 @@ namespace Sahinbey.Siramatik.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e_ihracat_erp_yazilimi_7 {
+            get {
+                object obj = ResourceManager.GetObject("e-ihracat-erp-yazilimi-7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

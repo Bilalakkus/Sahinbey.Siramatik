@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Sahinbey.Siramatik
 {
@@ -21,13 +22,31 @@ namespace Sahinbey.Siramatik
             InitializeComponent();
             timer1.Enabled = true;
             timer3.Enabled = true;
+            timerPlayer.Enabled = true;
             lblKayan.Text = "        ŞAHİNBEY BELEDİYESİNE HOŞ GELDİNİZ...                                                                   ";
         }
         //private static List<DataScreen> _liste = new List<DataScreen>();
         private async void FrmScreen_Load(object sender, EventArgs e)
         {
-
+            //Play();
         }
+        private void Play()
+        {
+            try
+            {
+                string path = Directory.GetCurrentDirectory();
+                SoundPlayer player = new SoundPlayer();
+                //D:\Dosyalar\KurumYazılımKodları\Kiosk\Sahinbey.Siramatik\Sahinbey.Siramatik\wav\ding.wav
+                player.SoundLocation = Path.GetDirectoryName(path) + @"\wav\ding.wav";
+                player.Play();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         private async void ListLoad()
         {
             string host = "https://numaratorapi.sahinbey.bel.tr";
@@ -47,6 +66,7 @@ namespace Sahinbey.Siramatik
             //biletleri ekrana yaz
             AddList(tickets);
         }
+
         private async void CallListLoad()
         {
             string host = "https://numaratorapi.sahinbey.bel.tr";
@@ -68,17 +88,21 @@ namespace Sahinbey.Siramatik
         }
         private void AddCallList(List<DataScreen> list)
         {
+            string beforeTicketName = lblCallFirt.Text;
             ClearCallList();
             foreach (var item in list)
             {
                 int i = list.ToList().IndexOf(item);
-                if (Convert.ToInt32(item.ticketNo.ToString()) < 1000)
-                {
                     if (i == 0)
                     {
+
+                        string newTicketName = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallFirt.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallTableFirst.Text = item.MasaId.ToString();
                         pnlCallFirst.Visible = true;
+
+                        if (beforeTicketName != newTicketName)
+                            Play();
                     }
                     else if (i == 1)
                     {
@@ -111,9 +135,6 @@ namespace Sahinbey.Siramatik
                         pnlCall6.Visible = true;
                     }
                 }
-
-            };
-
         }
         private void ClearCallList()
         {
@@ -138,7 +159,6 @@ namespace Sahinbey.Siramatik
             pnlCall5.Visible = false;
             pnlCall6.Visible = false;
         }
-
         private void AddList(List<DataScreen> list)
         {
             ListClear();
@@ -177,6 +197,26 @@ namespace Sahinbey.Siramatik
                         lblList6.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         pnlList6.Visible = true;
                     }
+                    else if (i == 6)
+                    {
+                        lblList7.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        pnlList7.Visible = true;
+                    }
+                    else if (i == 7)
+                    {
+                        lblList8.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        pnlList8.Visible = true;
+                    }
+                    else if (i == 8)
+                    {
+                        lblList9.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        pnlList9.Visible = true;
+                    }
+                    else if (i == 9)
+                    {
+                        lblList10.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        pnlList10.Visible = true;
+                    }
                 }
 
             };
@@ -190,12 +230,20 @@ namespace Sahinbey.Siramatik
             lblList4.Text = "";
             lblList5.Text = "";
             lblList6.Text = "";
+            lblList7.Text = "";
+            lblList8.Text = "";
+            lblList9.Text = "";
+            lblList10.Text = "";
             pnlList1.Visible = false;
             pnlList2.Visible = false;
             pnlList3.Visible = false;
             pnlList4.Visible = false;
             pnlList5.Visible = false;
             pnlList6.Visible = false;
+            pnlList7.Visible = false;
+            pnlList8.Visible = false;
+            pnlList9.Visible = false;
+            pnlList10.Visible = false;
         }
         private static void LoadList()
         {
@@ -230,8 +278,7 @@ namespace Sahinbey.Siramatik
         private void timer3_Tick(object sender, EventArgs e)
         {
             pnlCallFirst.BackColor = pnlCallFirst.BackColor == Color.Red ? Color.White : Color.Red;
-            ListLoad();
-            CallListLoad();
+            
         }
         private string SifirEkle(int sayi, int rakam = 2)
         {
@@ -263,5 +310,13 @@ namespace Sahinbey.Siramatik
             else
                 return sayi + "";
         }
+
+        private void timerPlayer_Tick(object sender, EventArgs e)
+        {
+            ListLoad();
+            CallListLoad();
+        }
+
+        
     }
 }

@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmploye));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblUserId = new System.Windows.Forms.Label();
+            this.lblMasaName = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.lblCagrilan = new System.Windows.Forms.Label();
             this.lblBekleyen = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -41,8 +44,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblKayan = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -63,16 +64,25 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button8 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMasa1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cmbGroup = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -80,6 +90,9 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox1.Controls.Add(this.lblUserId);
+            this.groupBox1.Controls.Add(this.lblMasaName);
+            this.groupBox1.Controls.Add(this.lblUserName);
             this.groupBox1.Controls.Add(this.lblCagrilan);
             this.groupBox1.Controls.Add(this.lblBekleyen);
             this.groupBox1.Controls.Add(this.label10);
@@ -93,6 +106,36 @@
             this.groupBox1.Size = new System.Drawing.Size(1096, 189);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // lblUserId
+            // 
+            this.lblUserId.AutoSize = true;
+            this.lblUserId.Location = new System.Drawing.Point(337, 160);
+            this.lblUserId.Name = "lblUserId";
+            this.lblUserId.Size = new System.Drawing.Size(0, 15);
+            this.lblUserId.TabIndex = 13;
+            // 
+            // lblMasaName
+            // 
+            this.lblMasaName.AutoSize = true;
+            this.lblMasaName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMasaName.ForeColor = System.Drawing.Color.Black;
+            this.lblMasaName.Location = new System.Drawing.Point(475, 139);
+            this.lblMasaName.Name = "lblMasaName";
+            this.lblMasaName.Size = new System.Drawing.Size(80, 21);
+            this.lblMasaName.TabIndex = 12;
+            this.lblMasaName.Text = "Masa Adı";
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblUserName.Location = new System.Drawing.Point(433, 112);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(178, 21);
+            this.lblUserName.TabIndex = 11;
+            this.lblUserName.Text = "Merhaba kullanıcı Adı";
             // 
             // lblCagrilan
             // 
@@ -168,7 +211,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(384, 115);
+            this.label3.Location = new System.Drawing.Point(384, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(270, 30);
             this.label3.TabIndex = 3;
@@ -181,7 +224,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Constantia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(250, 57);
+            this.label1.Location = new System.Drawing.Point(250, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(556, 59);
             this.label1.TabIndex = 1;
@@ -212,26 +255,6 @@
             // 
             this.timer1.Interval = 200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Location = new System.Drawing.Point(0, 190);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(381, 79);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(33, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(323, 45);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Bekleyen Numaralar";
             // 
             // groupBox4
             // 
@@ -455,6 +478,7 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox6.Controls.Add(this.groupBox3);
             this.groupBox6.Controls.Add(this.dataGridView1);
             this.groupBox6.Location = new System.Drawing.Point(0, 257);
             this.groupBox6.Name = "groupBox6";
@@ -462,13 +486,33 @@
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Location = new System.Drawing.Point(0, 0);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(381, 79);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(33, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(323, 45);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Bekleyen Numaralar";
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 18);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(365, 399);
+            this.dataGridView1.Size = new System.Drawing.Size(365, 332);
             this.dataGridView1.TabIndex = 0;
             // 
             // button8
@@ -486,34 +530,106 @@
             this.button8.Text = "Mola";
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Cyan;
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.btnMasa1);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.cmbGroup);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1044, 756);
+            this.panel1.TabIndex = 11;
+            // 
+            // btnMasa1
+            // 
+            this.btnMasa1.BackColor = System.Drawing.Color.Transparent;
+            this.btnMasa1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMasa1.FlatAppearance.BorderColor = System.Drawing.Color.PaleTurquoise;
+            this.btnMasa1.FlatAppearance.BorderSize = 0;
+            this.btnMasa1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnMasa1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnMasa1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMasa1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMasa1.Image = ((System.Drawing.Image)(resources.GetObject("btnMasa1.Image")));
+            this.btnMasa1.Location = new System.Drawing.Point(12, 227);
+            this.btnMasa1.Name = "btnMasa1";
+            this.btnMasa1.Size = new System.Drawing.Size(85, 90);
+            this.btnMasa1.TabIndex = 9;
+            this.btnMasa1.UseVisualStyleBackColor = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(261, 112);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(147, 32);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "Grup Seçiniz";
+            // 
+            // cmbGroup
+            // 
+            this.cmbGroup.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cmbGroup.FormattingEnabled = true;
+            this.cmbGroup.Location = new System.Drawing.Point(436, 110);
+            this.cmbGroup.Name = "cmbGroup";
+            this.cmbGroup.Size = new System.Drawing.Size(312, 38);
+            this.cmbGroup.TabIndex = 3;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(284, 20);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(475, 65);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Lütfen Masa Seçiniz";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(30, 207);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(63, 21);
+            this.label13.TabIndex = 20;
+            this.label13.Text = "Masa 1";
+            // 
             // FrmEmploye
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1040, 755);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmEmploye";
             this.Text = "Şahinbey Belediyesi";
+            this.Load += new System.EventHandler(this.FrmEmploye_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -527,8 +643,6 @@
         private GroupBox groupBox2;
         private Label lblKayan;
         private System.Windows.Forms.Timer timer1;
-        private GroupBox groupBox3;
-        private Label label2;
         private GroupBox groupBox4;
         private Label label4;
         private Label label5;
@@ -555,5 +669,16 @@
         private DataGridView dataGridView2;
         private Label lblDurum;
         private Button button8;
+        public Label lblUserName;
+        private Label lblMasaName;
+        private GroupBox groupBox3;
+        private Label label2;
+        public Label lblUserId;
+        private Panel panel1;
+        private Label label11;
+        private Label label12;
+        private ComboBox cmbGroup;
+        private Button btnMasa1;
+        private Label label13;
     }
 }
