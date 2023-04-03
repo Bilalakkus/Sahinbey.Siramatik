@@ -68,12 +68,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button8 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMasa1 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cmbGroup = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -82,7 +76,6 @@
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -530,81 +523,11 @@
             this.button8.Text = "Mola";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Cyan;
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.btnMasa1);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.cmbGroup);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Location = new System.Drawing.Point(-2, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1044, 756);
-            this.panel1.TabIndex = 11;
-            // 
-            // btnMasa1
-            // 
-            this.btnMasa1.BackColor = System.Drawing.Color.Transparent;
-            this.btnMasa1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnMasa1.FlatAppearance.BorderColor = System.Drawing.Color.PaleTurquoise;
-            this.btnMasa1.FlatAppearance.BorderSize = 0;
-            this.btnMasa1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnMasa1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnMasa1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMasa1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMasa1.Image = ((System.Drawing.Image)(resources.GetObject("btnMasa1.Image")));
-            this.btnMasa1.Location = new System.Drawing.Point(12, 227);
-            this.btnMasa1.Name = "btnMasa1";
-            this.btnMasa1.Size = new System.Drawing.Size(85, 90);
-            this.btnMasa1.TabIndex = 9;
-            this.btnMasa1.UseVisualStyleBackColor = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(261, 112);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(147, 32);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Grup Seçiniz";
-            // 
-            // cmbGroup
-            // 
-            this.cmbGroup.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cmbGroup.FormattingEnabled = true;
-            this.cmbGroup.Location = new System.Drawing.Point(436, 110);
-            this.cmbGroup.Name = "cmbGroup";
-            this.cmbGroup.Size = new System.Drawing.Size(312, 38);
-            this.cmbGroup.TabIndex = 3;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(284, 20);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(475, 65);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Lütfen Masa Seçiniz";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(30, 207);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(63, 21);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "Masa 1";
-            // 
             // FrmEmploye
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1040, 755);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
@@ -614,7 +537,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmEmploye";
             this.Text = "Şahinbey Belediyesi";
-            this.Load += new System.EventHandler(this.FrmEmploye_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -628,8 +550,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -674,11 +594,5 @@
         private GroupBox groupBox3;
         private Label label2;
         public Label lblUserId;
-        private Panel panel1;
-        private Label label11;
-        private Label label12;
-        private ComboBox cmbGroup;
-        private Button btnMasa1;
-        private Label label13;
     }
 }

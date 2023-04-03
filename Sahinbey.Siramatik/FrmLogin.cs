@@ -48,10 +48,9 @@ namespace Sahinbey.Siramatik
                 {
                     if (user.KioskPages == 1)//personel vatadaş çağırma yetkisi
                     {
-                        FrmEmploye frmEmploye = new FrmEmploye();
+                        FrmTables frmEmploye = new FrmTables();
                         frmEmploye.Show();
                         frmEmploye.lblUserId.Text = user.No.ToString();
-                        frmEmploye.lblUserName.Text = "Merhaba" + user.AdSoyad;
                         //this.Close();
                     }
                     else

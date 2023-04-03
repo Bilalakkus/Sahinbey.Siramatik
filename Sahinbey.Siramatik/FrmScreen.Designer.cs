@@ -40,6 +40,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlList10 = new System.Windows.Forms.Panel();
+            this.lblList10 = new System.Windows.Forms.Label();
+            this.pnlList9 = new System.Windows.Forms.Panel();
+            this.lblList9 = new System.Windows.Forms.Label();
+            this.pnlList8 = new System.Windows.Forms.Panel();
+            this.lblList8 = new System.Windows.Forms.Label();
+            this.pnlList7 = new System.Windows.Forms.Panel();
+            this.lblList7 = new System.Windows.Forms.Label();
             this.pnlList6 = new System.Windows.Forms.Panel();
             this.lblList6 = new System.Windows.Forms.Label();
             this.pnlList5 = new System.Windows.Forms.Panel();
@@ -79,17 +87,13 @@
             this.lblCall6 = new System.Windows.Forms.Label();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timerPlayer = new System.Windows.Forms.Timer(this.components);
-            this.pnlList7 = new System.Windows.Forms.Panel();
-            this.lblList7 = new System.Windows.Forms.Label();
-            this.pnlList8 = new System.Windows.Forms.Panel();
-            this.lblList8 = new System.Windows.Forms.Label();
-            this.pnlList9 = new System.Windows.Forms.Panel();
-            this.lblList9 = new System.Windows.Forms.Label();
-            this.pnlList10 = new System.Windows.Forms.Panel();
-            this.lblList10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.pnlList10.SuspendLayout();
+            this.pnlList9.SuspendLayout();
+            this.pnlList8.SuspendLayout();
+            this.pnlList7.SuspendLayout();
             this.pnlList6.SuspendLayout();
             this.pnlList5.SuspendLayout();
             this.pnlList4.SuspendLayout();
@@ -102,10 +106,6 @@
             this.pnlCall4.SuspendLayout();
             this.pnlCall5.SuspendLayout();
             this.pnlCall6.SuspendLayout();
-            this.pnlList7.SuspendLayout();
-            this.pnlList8.SuspendLayout();
-            this.pnlList9.SuspendLayout();
-            this.pnlList10.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -233,9 +233,94 @@
             this.panel2.Size = new System.Drawing.Size(483, 801);
             this.panel2.TabIndex = 2;
             // 
+            // pnlList10
+            // 
+            this.pnlList10.BackColor = System.Drawing.Color.White;
+            this.pnlList10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlList10.Controls.Add(this.lblList10);
+            this.pnlList10.Location = new System.Drawing.Point(7, 727);
+            this.pnlList10.Name = "pnlList10";
+            this.pnlList10.Size = new System.Drawing.Size(468, 67);
+            this.pnlList10.TabIndex = 12;
+            this.pnlList10.Visible = false;
+            // 
+            // lblList10
+            // 
+            this.lblList10.AutoSize = true;
+            this.lblList10.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList10.Location = new System.Drawing.Point(182, 8);
+            this.lblList10.Name = "lblList10";
+            this.lblList10.Size = new System.Drawing.Size(110, 54);
+            this.lblList10.TabIndex = 0;
+            this.lblList10.Text = "000";
+            // 
+            // pnlList9
+            // 
+            this.pnlList9.BackColor = System.Drawing.Color.White;
+            this.pnlList9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlList9.Controls.Add(this.lblList9);
+            this.pnlList9.Location = new System.Drawing.Point(7, 654);
+            this.pnlList9.Name = "pnlList9";
+            this.pnlList9.Size = new System.Drawing.Size(468, 67);
+            this.pnlList9.TabIndex = 11;
+            this.pnlList9.Visible = false;
+            // 
+            // lblList9
+            // 
+            this.lblList9.AutoSize = true;
+            this.lblList9.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList9.Location = new System.Drawing.Point(182, 8);
+            this.lblList9.Name = "lblList9";
+            this.lblList9.Size = new System.Drawing.Size(110, 54);
+            this.lblList9.TabIndex = 0;
+            this.lblList9.Text = "000";
+            // 
+            // pnlList8
+            // 
+            this.pnlList8.BackColor = System.Drawing.Color.White;
+            this.pnlList8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlList8.Controls.Add(this.lblList8);
+            this.pnlList8.Location = new System.Drawing.Point(7, 581);
+            this.pnlList8.Name = "pnlList8";
+            this.pnlList8.Size = new System.Drawing.Size(468, 67);
+            this.pnlList8.TabIndex = 10;
+            this.pnlList8.Visible = false;
+            // 
+            // lblList8
+            // 
+            this.lblList8.AutoSize = true;
+            this.lblList8.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList8.Location = new System.Drawing.Point(182, 8);
+            this.lblList8.Name = "lblList8";
+            this.lblList8.Size = new System.Drawing.Size(110, 54);
+            this.lblList8.TabIndex = 0;
+            this.lblList8.Text = "000";
+            // 
+            // pnlList7
+            // 
+            this.pnlList7.BackColor = System.Drawing.Color.White;
+            this.pnlList7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlList7.Controls.Add(this.lblList7);
+            this.pnlList7.Location = new System.Drawing.Point(8, 505);
+            this.pnlList7.Name = "pnlList7";
+            this.pnlList7.Size = new System.Drawing.Size(468, 67);
+            this.pnlList7.TabIndex = 9;
+            this.pnlList7.Visible = false;
+            // 
+            // lblList7
+            // 
+            this.lblList7.AutoSize = true;
+            this.lblList7.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList7.Location = new System.Drawing.Point(182, 8);
+            this.lblList7.Name = "lblList7";
+            this.lblList7.Size = new System.Drawing.Size(110, 54);
+            this.lblList7.TabIndex = 0;
+            this.lblList7.Text = "000";
+            // 
             // pnlList6
             // 
             this.pnlList6.BackColor = System.Drawing.Color.White;
+            this.pnlList6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList6.Controls.Add(this.lblList6);
             this.pnlList6.Location = new System.Drawing.Point(7, 432);
             this.pnlList6.Name = "pnlList6";
@@ -256,6 +341,7 @@
             // pnlList5
             // 
             this.pnlList5.BackColor = System.Drawing.Color.White;
+            this.pnlList5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList5.Controls.Add(this.lblList5);
             this.pnlList5.Location = new System.Drawing.Point(8, 360);
             this.pnlList5.Name = "pnlList5";
@@ -276,6 +362,7 @@
             // pnlList4
             // 
             this.pnlList4.BackColor = System.Drawing.Color.White;
+            this.pnlList4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList4.Controls.Add(this.lblList4);
             this.pnlList4.Location = new System.Drawing.Point(8, 285);
             this.pnlList4.Name = "pnlList4";
@@ -296,6 +383,7 @@
             // pnlList3
             // 
             this.pnlList3.BackColor = System.Drawing.Color.White;
+            this.pnlList3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList3.Controls.Add(this.lblList3);
             this.pnlList3.Location = new System.Drawing.Point(8, 217);
             this.pnlList3.Name = "pnlList3";
@@ -316,6 +404,7 @@
             // pnlList2
             // 
             this.pnlList2.BackColor = System.Drawing.Color.White;
+            this.pnlList2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList2.Controls.Add(this.lblList2);
             this.pnlList2.Location = new System.Drawing.Point(7, 154);
             this.pnlList2.Name = "pnlList2";
@@ -336,7 +425,9 @@
             // pnlList1
             // 
             this.pnlList1.BackColor = System.Drawing.Color.White;
+            this.pnlList1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList1.Controls.Add(this.lblList1);
+            this.pnlList1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pnlList1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pnlList1.Location = new System.Drawing.Point(8, 85);
             this.pnlList1.Name = "pnlList1";
@@ -692,86 +783,6 @@
             this.timerPlayer.Interval = 5000;
             this.timerPlayer.Tick += new System.EventHandler(this.timerPlayer_Tick);
             // 
-            // pnlList7
-            // 
-            this.pnlList7.BackColor = System.Drawing.Color.White;
-            this.pnlList7.Controls.Add(this.lblList7);
-            this.pnlList7.Location = new System.Drawing.Point(8, 505);
-            this.pnlList7.Name = "pnlList7";
-            this.pnlList7.Size = new System.Drawing.Size(468, 67);
-            this.pnlList7.TabIndex = 9;
-            this.pnlList7.Visible = false;
-            // 
-            // lblList7
-            // 
-            this.lblList7.AutoSize = true;
-            this.lblList7.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList7.Location = new System.Drawing.Point(182, 8);
-            this.lblList7.Name = "lblList7";
-            this.lblList7.Size = new System.Drawing.Size(110, 54);
-            this.lblList7.TabIndex = 0;
-            this.lblList7.Text = "000";
-            // 
-            // pnlList8
-            // 
-            this.pnlList8.BackColor = System.Drawing.Color.White;
-            this.pnlList8.Controls.Add(this.lblList8);
-            this.pnlList8.Location = new System.Drawing.Point(7, 581);
-            this.pnlList8.Name = "pnlList8";
-            this.pnlList8.Size = new System.Drawing.Size(468, 67);
-            this.pnlList8.TabIndex = 10;
-            this.pnlList8.Visible = false;
-            // 
-            // lblList8
-            // 
-            this.lblList8.AutoSize = true;
-            this.lblList8.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList8.Location = new System.Drawing.Point(182, 8);
-            this.lblList8.Name = "lblList8";
-            this.lblList8.Size = new System.Drawing.Size(110, 54);
-            this.lblList8.TabIndex = 0;
-            this.lblList8.Text = "000";
-            // 
-            // pnlList9
-            // 
-            this.pnlList9.BackColor = System.Drawing.Color.White;
-            this.pnlList9.Controls.Add(this.lblList9);
-            this.pnlList9.Location = new System.Drawing.Point(7, 654);
-            this.pnlList9.Name = "pnlList9";
-            this.pnlList9.Size = new System.Drawing.Size(468, 67);
-            this.pnlList9.TabIndex = 11;
-            this.pnlList9.Visible = false;
-            // 
-            // lblList9
-            // 
-            this.lblList9.AutoSize = true;
-            this.lblList9.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList9.Location = new System.Drawing.Point(182, 8);
-            this.lblList9.Name = "lblList9";
-            this.lblList9.Size = new System.Drawing.Size(110, 54);
-            this.lblList9.TabIndex = 0;
-            this.lblList9.Text = "000";
-            // 
-            // pnlList10
-            // 
-            this.pnlList10.BackColor = System.Drawing.Color.White;
-            this.pnlList10.Controls.Add(this.lblList10);
-            this.pnlList10.Location = new System.Drawing.Point(7, 727);
-            this.pnlList10.Name = "pnlList10";
-            this.pnlList10.Size = new System.Drawing.Size(468, 67);
-            this.pnlList10.TabIndex = 12;
-            this.pnlList10.Visible = false;
-            // 
-            // lblList10
-            // 
-            this.lblList10.AutoSize = true;
-            this.lblList10.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList10.Location = new System.Drawing.Point(182, 8);
-            this.lblList10.Name = "lblList10";
-            this.lblList10.Size = new System.Drawing.Size(110, 54);
-            this.lblList10.TabIndex = 0;
-            this.lblList10.Text = "000";
-            // 
             // FrmScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -799,6 +810,14 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.pnlList10.ResumeLayout(false);
+            this.pnlList10.PerformLayout();
+            this.pnlList9.ResumeLayout(false);
+            this.pnlList9.PerformLayout();
+            this.pnlList8.ResumeLayout(false);
+            this.pnlList8.PerformLayout();
+            this.pnlList7.ResumeLayout(false);
+            this.pnlList7.PerformLayout();
             this.pnlList6.ResumeLayout(false);
             this.pnlList6.PerformLayout();
             this.pnlList5.ResumeLayout(false);
@@ -823,14 +842,6 @@
             this.pnlCall5.PerformLayout();
             this.pnlCall6.ResumeLayout(false);
             this.pnlCall6.PerformLayout();
-            this.pnlList7.ResumeLayout(false);
-            this.pnlList7.PerformLayout();
-            this.pnlList8.ResumeLayout(false);
-            this.pnlList8.PerformLayout();
-            this.pnlList9.ResumeLayout(false);
-            this.pnlList9.PerformLayout();
-            this.pnlList10.ResumeLayout(false);
-            this.pnlList10.PerformLayout();
             this.ResumeLayout(false);
 
         }
