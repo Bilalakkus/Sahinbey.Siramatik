@@ -1,3 +1,5 @@
+using Sahinbey.Siramatik.Services;
+
 namespace Sahinbey.Siramatik
 {
     internal static class Program
@@ -10,7 +12,9 @@ namespace Sahinbey.Siramatik
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+
             ApplicationConfiguration.Initialize();
+            ApplicationServiceSettings.RegisterAllService();
             Application.Run(new FrmLogin());
         }
     }

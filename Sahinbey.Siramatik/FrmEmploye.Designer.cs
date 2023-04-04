@@ -64,9 +64,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.listWaidTicket = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button8 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -75,7 +75,6 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -471,13 +470,23 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox6.Controls.Add(this.listWaidTicket);
             this.groupBox6.Controls.Add(this.groupBox3);
-            this.groupBox6.Controls.Add(this.dataGridView1);
             this.groupBox6.Location = new System.Drawing.Point(0, 257);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(381, 423);
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
+            // 
+            // listWaidTicket
+            // 
+            this.listWaidTicket.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listWaidTicket.FormattingEnabled = true;
+            this.listWaidTicket.ItemHeight = 47;
+            this.listWaidTicket.Location = new System.Drawing.Point(2, 84);
+            this.listWaidTicket.Name = "listWaidTicket";
+            this.listWaidTicket.Size = new System.Drawing.Size(373, 333);
+            this.listWaidTicket.TabIndex = 6;
             // 
             // groupBox3
             // 
@@ -498,15 +507,6 @@
             this.label2.Size = new System.Drawing.Size(323, 45);
             this.label2.TabIndex = 0;
             this.label2.Text = "Bekleyen Numaralar";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 85);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(365, 332);
-            this.dataGridView1.TabIndex = 0;
             // 
             // button8
             // 
@@ -549,7 +549,6 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -583,16 +582,16 @@
         private Label lblBekleyen;
         private Label lblCagrilan;
         private GroupBox groupBox6;
-        private DataGridView dataGridView1;
         private Button button6;
         private Button button5;
         private DataGridView dataGridView2;
         private Label lblDurum;
         private Button button8;
         public Label lblUserName;
-        private Label lblMasaName;
+        public Label lblMasaName;
         private GroupBox groupBox3;
         private Label label2;
         public Label lblUserId;
+        private ListBox listWaidTicket;
     }
 }

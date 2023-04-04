@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using Sahinbey.Siramatik.Constants;
 using Sahinbey.Siramatik.Model;
 using Sahinbey.Siramatik.Utilities;
 using System.Drawing.Printing;
@@ -45,8 +46,8 @@ namespace Sahinbey.Siramatik
 
         private async void btnEmlak_Click(object sender, EventArgs e)
         {
-            string host = "https://numaratorapi.sahinbey.bel.tr";
-            //string host = "https://localhost:7117";
+            string host = Constant.API_SERVICE;
+            //string host = Constant.API_SERVICE;
             string path = "/api/v1/Tickets";
             HttpClient client = new HttpClient();
             CreateTicket query = new CreateTicket
@@ -83,8 +84,8 @@ namespace Sahinbey.Siramatik
 
         private async void btnOncelikli_Click(object sender, EventArgs e)
         {
-            string host = "https://numaratorapi.sahinbey.bel.tr";
-            //string host = "https://localhost:7117";
+            string host = Constant.API_SERVICE;
+            //string host = Constant.API_SERVICE;
             string path = "/api/v1/Tickets";
             HttpClient client = new HttpClient();
             CreateTicket query = new CreateTicket

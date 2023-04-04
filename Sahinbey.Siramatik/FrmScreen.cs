@@ -12,6 +12,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using Sahinbey.Siramatik.Constants;
+using Sahinbey.Siramatik.Services;
+using Sahinbey.Siramatik.DTOs.TicketDTOs;
 
 namespace Sahinbey.Siramatik
 {
@@ -49,21 +52,8 @@ namespace Sahinbey.Siramatik
 
         private async void ListLoad()
         {
-            string host = "https://numaratorapi.sahinbey.bel.tr";
-            //string host = "https://localhost:7117";
-            string path = "/api/v1/Tickets";
-            HttpClient client = new HttpClient();
-            CreateTicket query = new CreateTicket
-            {
-                GroupId = 2
-            };
-            var json = JsonConvert.SerializeObject(query);
-            var data = new StringContent(json, Encoding.UTF8, "application/json");
-            string uri = host + path + "/GetAllGroup";
-            HttpResponseMessage response = await client.PostAsync(uri, data);
-            var jsonResult = await response.Content.ReadAsStringAsync();
-            List<DataScreen> tickets = JsonConvert.DeserializeObject<List<DataScreen>>(jsonResult);
-            //biletleri ekrana yaz
+            var tickets = await IOCContainer.Resolve<ITicketService>().GetAllAsync(2);
+            
             AddList(tickets);
         }
 
@@ -96,8 +86,8 @@ namespace Sahinbey.Siramatik
                     if (i == 0)
                     {
 
-                        string newTicketName = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
-                        lblCallFirt.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        string newTicketName = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblCallFirt.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallTableFirst.Text = item.MasaId.ToString();
                         pnlCallFirst.Visible = true;
 
@@ -106,31 +96,31 @@ namespace Sahinbey.Siramatik
                     }
                     else if (i == 1)
                     {
-                        lblCall2.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblCall2.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallTable2.Text = item.MasaId.ToString();
                         pnlCall2.Visible = true;
                     }
                     else if (i == 2)
                     {
-                        lblCall3.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblCall3.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallTable3.Text = item.MasaId.ToString();
                         pnlCall3.Visible = true;
                     }
                     else if (i == 3)
                     {
-                        lblCall4.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblCall4.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallTable4.Text = item.MasaId.ToString();
                         pnlCall4.Visible = true;
                     }
                     else if (i == 4)
                     {
-                        lblCall5.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblCall5.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallTable5.Text = item.MasaId.ToString();
                         pnlCall5.Visible = true;
                     }
                     else if (i == 5)
                     {
-                        lblList6.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList6.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallTable6.Text = item.MasaId.ToString();
                         pnlCall6.Visible = true;
                     }
@@ -159,62 +149,62 @@ namespace Sahinbey.Siramatik
             pnlCall5.Visible = false;
             pnlCall6.Visible = false;
         }
-        private void AddList(List<DataScreen> list)
+        private void AddList(IEnumerable<ResponseTicketDto> list)
         {
             ListClear();
             foreach (var item in list)
             {
                 int i = list.ToList().IndexOf(item);
-                if (Convert.ToInt32(item.ticketNo.ToString()) < 1000)
+                if (Convert.ToInt32(item.TicketNo.ToString()) < 1000)
                 {
                     if (i == 0)
                     {
-                        lblList1.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList1.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList1.Visible = true;
                     }
                     else if (i == 1)
                     {
-                        lblList2.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList2.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList2.Visible = true;
                     }
                     else if (i == 2)
                     {
-                        lblList3.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList3.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList3.Visible = true;
                     }
                     else if (i == 3)
                     {
-                        lblList4.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList4.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList4.Visible = true;
                     }
                     else if (i == 4)
                     {
-                        lblList5.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList5.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList5.Visible = true;
                     }
                     else if (i == 5)
                     {
-                        lblList6.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList6.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList6.Visible = true;
                     }
                     else if (i == 6)
                     {
-                        lblList7.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList7.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList7.Visible = true;
                     }
                     else if (i == 7)
                     {
-                        lblList8.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList8.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList8.Visible = true;
                     }
                     else if (i == 8)
                     {
-                        lblList9.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList9.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList9.Visible = true;
                     }
                     else if (i == 9)
                     {
-                        lblList10.Text = SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblList10.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
                         pnlList10.Visible = true;
                     }
                 }
@@ -252,7 +242,7 @@ namespace Sahinbey.Siramatik
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblKayan.Text = lblKayan.Text.Substring(2) + lblKayan.Text.Substring(0, 2);
-            lblSaat.Text = SifirEkle(DateTime.Now.TimeOfDay.Hours) + ":" + SifirEkle(DateTime.Now.TimeOfDay.Minutes) + ":" + SifirEkle(DateTime.Now.TimeOfDay.Seconds);
+            lblSaat.Text = AddNumaraFirstZero.SifirEkle(DateTime.Now.TimeOfDay.Hours) + ":" + AddNumaraFirstZero.SifirEkle(DateTime.Now.TimeOfDay.Minutes) + ":" + AddNumaraFirstZero.SifirEkle(DateTime.Now.TimeOfDay.Seconds);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -280,36 +270,7 @@ namespace Sahinbey.Siramatik
             pnlCallFirst.BackColor = pnlCallFirst.BackColor == Color.Red ? Color.White : Color.Red;
             
         }
-        private string SifirEkle(int sayi, int rakam = 2)
-        {
-            if (rakam == 2)
-            {
-                if (sayi < 10)
-                {
-                    string newNumber = "0" + sayi;
-                    return newNumber;
-                }
-                else
-                    return sayi.ToString();
-            }
-            if (rakam == 3)
-            {
-                if (sayi < 10)
-                {
-                    string newNumber = "00" + sayi;
-                    return newNumber;
-                }
-                else if (sayi < 100)
-                {
-                    string newNumber = "0" + sayi;
-                    return newNumber;
-                }
-                else
-                    return sayi.ToString();
-            }
-            else
-                return sayi + "";
-        }
+        
 
         private void timerPlayer_Tick(object sender, EventArgs e)
         {

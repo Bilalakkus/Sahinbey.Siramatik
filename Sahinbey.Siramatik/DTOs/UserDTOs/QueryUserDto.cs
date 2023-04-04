@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sahinbey.Siramatik.UserDTOs
+namespace Sahinbey.Siramatik.DTOs.UserDTOs
 {
     public class QueryUserDto
     {
