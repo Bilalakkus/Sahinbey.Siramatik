@@ -49,7 +49,6 @@ namespace Sahinbey.Siramatik
                 throw;
             }
         }
-
         private async void ListLoad()
         {
             var tickets = await IOCContainer.Resolve<ITicketService>().GetAllAsync(2);

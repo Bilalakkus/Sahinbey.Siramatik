@@ -29,6 +29,7 @@ namespace Sahinbey.Siramatik
                 var data = await IOCContainer.Resolve<ITableService>().GetByIdAsync(Convert.ToInt32(masaId));
                 if (data != null)
                 {
+                    
                     FrmEmploye frmEmploye = new FrmEmploye();
                     frmEmploye.lblMasaName.Text = data.TableName;
                     frmEmploye.lblUserId.Text = lblUserId.Text;
@@ -41,8 +42,7 @@ namespace Sahinbey.Siramatik
         }
         private async void ListGroup()
         {
-            var response = await client.GetAsync(Constant.API_SERVICE + "/api/v1/Groups/GetAllGroup"); 
-
+            var response = await client.GetAsync(Constant.API_SERVICE + "/api/v1/Groups/GetAllGroup");
             if (response.IsSuccessStatusCode == true)
             {
                 string res = await response.Content.ReadAsStringAsync();
@@ -106,10 +106,13 @@ namespace Sahinbey.Siramatik
                     MessageBox.Show("HATA! Masa Açılamadı!");
                 else if (!await IOCContainer.Resolve<ITableService>().AddAsync(addTable))
                     MessageBox.Show("HATA! Masa açılırken işlem hareketi kaydedilemedi");
+                
                 FrmEmploye frmEmploye = new FrmEmploye();
-                frmEmploye.Show();
+                ActiveMasa.MasaId = tableId;
+                ActiveMasa.GroupId = Convert.ToInt32(cmbGroup.SelectedValue);
                 frmEmploye.lblUserId.Text = lblUserId.Text;
                 frmEmploye.lblMasaName.Text = btn.Text;
+                frmEmploye.Show();
                 this.Close();
             }
             else
@@ -117,37 +120,34 @@ namespace Sahinbey.Siramatik
         }
         private async void cmbGroup_SelectedIndexChanged(object sender, EventArgs e)
         {
-            HttpClient client = new HttpClient();
-            string url = Constant.API_SERVICE + "/api/v1/Tables/GetById/" + cmbGroup.SelectedValue;
-            var response = await client.GetAsync(url);
 
-            if (response.IsSuccessStatusCode == true)
+            if (cmbGroup.SelectedIndex>0)
             {
-                string res = await response.Content.ReadAsStringAsync();
-                List<Table> tableList = JsonConvert.DeserializeObject<List<Table>>(res);
-                int i = 0;
-
-                foreach (var tbl in tableList)
+                var tableList = await IOCContainer.Resolve<ITableService>().GetByGroupIdAsync(Convert.ToInt32(cmbGroup.SelectedValue));
+                if (tableList != null)
                 {
+                    int i = 0;
+                    foreach (var tbl in tableList)
+                    {
+                        if (i == 0)
+                            NewMasaButton(200, 0, tbl, 135, 120);
+                        else if (i < 10)
+                            NewMasaButton(200, 115 * i, tbl, 135, 120);
+                        else if (i < 20)
+                            NewMasaButton(350, 115 * (i - 10), tbl, 135, 120);
+                        else if (i < 30)
+                            NewMasaButton(500, 115 * (i - 20), tbl, 135, 120);
+                        else
+                            NewMasaButton(400, 400, tbl, 135, 120);
 
-                    if (i == 0)
-                        NewMasaButton(200, 0, tbl, 135, 120);
-                    else if (i < 10)
-                        NewMasaButton(200, 115 * i, tbl, 135, 120);
-                    else if (i < 20)
-                        NewMasaButton(350, 115 * (i - 10), tbl, 135, 120);
-                    else if (i < 30)
-                        NewMasaButton(500, 115 * (i - 20), tbl, 135, 120);
-                    else
-                        NewMasaButton(400, 400, tbl, 135, 120);
-
-                    i++;
+                        i++;
+                    }
                 }
-            }
-            else
-            {
-                //await JSRuntime.Current.InvokeAsync<string>("alert", "Warning, the credentials you have entered are incorrect.");
-                //return false;
+                else
+                {
+                    //await JSRuntime.Current.InvokeAsync<string>("alert", "Warning, the credentials you have entered are incorrect.");
+                    //return false;
+                } 
             }
         }
     }

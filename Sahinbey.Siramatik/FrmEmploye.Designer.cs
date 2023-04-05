@@ -67,7 +67,8 @@
             this.listWaidTicket = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnPersonCall = new System.Windows.Forms.Button();
+            this.timerListRefresh = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -112,7 +113,7 @@
             this.lblMasaName.AutoSize = true;
             this.lblMasaName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMasaName.ForeColor = System.Drawing.Color.Black;
-            this.lblMasaName.Location = new System.Drawing.Point(475, 139);
+            this.lblMasaName.Location = new System.Drawing.Point(470, 139);
             this.lblMasaName.Name = "lblMasaName";
             this.lblMasaName.Size = new System.Drawing.Size(80, 21);
             this.lblMasaName.TabIndex = 12;
@@ -336,6 +337,7 @@
             // 
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button7.Enabled = false;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
@@ -508,27 +510,33 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Bekleyen Numaralar";
             // 
-            // button8
+            // btnPersonCall
             // 
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(945, 190);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(91, 89);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Mola";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnPersonCall.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPersonCall.BackgroundImage")));
+            this.btnPersonCall.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPersonCall.FlatAppearance.BorderSize = 0;
+            this.btnPersonCall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPersonCall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
+            this.btnPersonCall.ForeColor = System.Drawing.Color.White;
+            this.btnPersonCall.Location = new System.Drawing.Point(945, 190);
+            this.btnPersonCall.Name = "btnPersonCall";
+            this.btnPersonCall.Size = new System.Drawing.Size(91, 89);
+            this.btnPersonCall.TabIndex = 10;
+            this.btnPersonCall.Text = "Mola";
+            this.btnPersonCall.UseVisualStyleBackColor = true;
+            this.btnPersonCall.Click += new System.EventHandler(this.btnPersonCall_Click);
+            // 
+            // timerListRefresh
+            // 
+            this.timerListRefresh.Interval = 3000;
+            this.timerListRefresh.Tick += new System.EventHandler(this.timerListRefresh_Tick);
             // 
             // FrmEmploye
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1040, 755);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btnPersonCall);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
@@ -586,12 +594,13 @@
         private Button button5;
         private DataGridView dataGridView2;
         private Label lblDurum;
-        private Button button8;
+        private Button btnPersonCall;
         public Label lblUserName;
         public Label lblMasaName;
         private GroupBox groupBox3;
         private Label label2;
         public Label lblUserId;
         private ListBox listWaidTicket;
+        private System.Windows.Forms.Timer timerListRefresh;
     }
 }

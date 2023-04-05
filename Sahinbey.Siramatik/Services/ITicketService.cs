@@ -10,5 +10,6 @@ namespace Sahinbey.Siramatik.Services
     public interface ITicketService
     {
         Task<IEnumerable<ResponseTicketDto>> GetAllAsync(int GroupId);
+        Task<IEnumerable<ResponseTicketDto>> CallTicket(CallTicketDto dto);
     }
 }

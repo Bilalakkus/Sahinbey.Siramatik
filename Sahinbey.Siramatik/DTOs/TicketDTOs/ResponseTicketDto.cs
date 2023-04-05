@@ -11,7 +11,7 @@ namespace Sahinbey.Siramatik.DTOs.TicketDTOs
         public string TicketNo { get; set; }
         public string GroupName { get; set; }
         public string Header { get; set; }
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
         public string Time { get; set; }
         public int PersonWaiting { get; set; }
     }

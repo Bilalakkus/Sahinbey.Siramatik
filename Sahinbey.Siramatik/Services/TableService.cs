@@ -42,9 +42,18 @@ namespace Sahinbey.Siramatik.Services
         {
             throw new NotImplementedException();
         }
-        public Task<IEnumerable<Table>> GetByGroupIdAsync(int id)
+        public async Task<IEnumerable<Table>> GetByGroupIdAsync(int id)
         {
-            throw new NotImplementedException();
+            string url = Constant.API_SERVICE + "/api/v1/Tables/GetByGroupId/" + id;
+            var response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode == true)
+            {
+                string res = await response.Content.ReadAsStringAsync();
+                IEnumerable<Table> table = JsonConvert.DeserializeObject<IEnumerable<Table>>(res);
+                return table;
+            }
+            else
+                throw new ArgumentException("Kayıt bulunamadı");
         }
         public async Task<ResponseTableDto> GetByIdAsync(int id)
         {
