@@ -19,5 +19,6 @@ namespace Sahinbey.Siramatik.Services
         Task<bool> TablePasiveAsync(int Id);
         Task<int> TableWhereIdAsync(string TabloName);
         Task<int> IsItHaveTable(int UserId);
+        Task<bool> EmployeeExit(int UserId);
     }
 }

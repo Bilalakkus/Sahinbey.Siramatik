@@ -144,14 +144,14 @@
             // 
             this.kullanıcıRaporuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("kullanıcıRaporuToolStripMenuItem.Image")));
             this.kullanıcıRaporuToolStripMenuItem.Name = "kullanıcıRaporuToolStripMenuItem";
-            this.kullanıcıRaporuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kullanıcıRaporuToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.kullanıcıRaporuToolStripMenuItem.Text = "Kullanıcı Raporu";
             // 
             // dashBoardToolStripMenuItem
             // 
             this.dashBoardToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("dashBoardToolStripMenuItem.Image")));
             this.dashBoardToolStripMenuItem.Name = "dashBoardToolStripMenuItem";
-            this.dashBoardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dashBoardToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.dashBoardToolStripMenuItem.Text = "Dash Board";
             // 
             // çıkışToolStripMenuItem
@@ -172,6 +172,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmAdmin";
             this.Text = "Şahinbey Belediyesi";
+            this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

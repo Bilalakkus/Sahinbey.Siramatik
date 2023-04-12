@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sahinbey.Siramatik.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,10 @@ namespace Sahinbey.Siramatik
 
         private void employeeEkranıToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmEmploye frmEmploye = new FrmEmploye();
+            FrmTables frmEmploye = new FrmTables();
+            frmEmploye.lblUserId.Text = ActiveUser.No.ToString();
             frmEmploye.Show();
+           
         }
 
         private void numaraEkranıToolStripMenuItem_Click(object sender, EventArgs e)
@@ -39,6 +42,12 @@ namespace Sahinbey.Siramatik
         {
             FrmScreen frmScreen = new FrmScreen();
             frmScreen.Show();
+        }
+
+        private void FrmAdmin_Load(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

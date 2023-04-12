@@ -85,9 +85,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(257, 127);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(569, 30);
+            this.label3.Size = new System.Drawing.Size(581, 30);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Lütfen işlemyapmak istediğiniz gruptan numara alınız";
+            this.label3.Text = "Lütfen işlem yapmak istediğiniz gruptan numara alınız.";
             this.label3.DoubleClick += new System.EventHandler(this.label3_DoubleClick);
             // 
             // label1

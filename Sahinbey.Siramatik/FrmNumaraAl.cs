@@ -123,7 +123,7 @@ namespace Sahinbey.Siramatik
         private void label3_DoubleClick(object sender, EventArgs e)
         {
             this.Close();
-            Application.Exit();
+            
         }
     }
 }

@@ -112,14 +112,14 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.groupBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.groupBox1.Controls.Add(this.lblKayan);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.lblSaat);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1544, 186);
+            this.groupBox1.Size = new System.Drawing.Size(2222, 186);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -139,7 +139,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Constantia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(394, 19);
+            this.label1.Location = new System.Drawing.Point(602, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(556, 59);
             this.label1.TabIndex = 8;
@@ -167,7 +167,7 @@
             this.lblSaat.AutoSize = true;
             this.lblSaat.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSaat.ForeColor = System.Drawing.Color.Red;
-            this.lblSaat.Location = new System.Drawing.Point(1297, 22);
+            this.lblSaat.Location = new System.Drawing.Point(1975, 22);
             this.lblSaat.Name = "lblSaat";
             this.lblSaat.Size = new System.Drawing.Size(160, 56);
             this.lblSaat.TabIndex = 1;
@@ -182,12 +182,13 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Cyan;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, 186);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1062, 82);
+            this.panel1.Size = new System.Drawing.Size(1740, 82);
             this.panel1.TabIndex = 1;
             // 
             // label3
@@ -195,7 +196,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(839, 9);
+            this.label3.Location = new System.Drawing.Point(1402, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 65);
             this.label3.TabIndex = 1;
@@ -215,7 +216,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel2.BackColor = System.Drawing.SystemColors.Info;
             this.panel2.Controls.Add(this.pnlList10);
             this.panel2.Controls.Add(this.pnlList9);
             this.panel2.Controls.Add(this.pnlList8);
@@ -228,7 +229,7 @@
             this.panel2.Controls.Add(this.pnlList1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(1061, 185);
+            this.panel2.Location = new System.Drawing.Point(1739, 185);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(483, 801);
             this.panel2.TabIndex = 2;
@@ -247,10 +248,10 @@
             // lblList10
             // 
             this.lblList10.AutoSize = true;
-            this.lblList10.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList10.Location = new System.Drawing.Point(182, 8);
+            this.lblList10.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList10.Location = new System.Drawing.Point(182, -5);
             this.lblList10.Name = "lblList10";
-            this.lblList10.Size = new System.Drawing.Size(110, 54);
+            this.lblList10.Size = new System.Drawing.Size(122, 74);
             this.lblList10.TabIndex = 0;
             this.lblList10.Text = "000";
             // 
@@ -268,10 +269,10 @@
             // lblList9
             // 
             this.lblList9.AutoSize = true;
-            this.lblList9.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList9.Location = new System.Drawing.Point(182, 8);
+            this.lblList9.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList9.Location = new System.Drawing.Point(182, -5);
             this.lblList9.Name = "lblList9";
-            this.lblList9.Size = new System.Drawing.Size(110, 54);
+            this.lblList9.Size = new System.Drawing.Size(122, 74);
             this.lblList9.TabIndex = 0;
             this.lblList9.Text = "000";
             // 
@@ -289,10 +290,10 @@
             // lblList8
             // 
             this.lblList8.AutoSize = true;
-            this.lblList8.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList8.Location = new System.Drawing.Point(182, 8);
+            this.lblList8.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList8.Location = new System.Drawing.Point(182, -5);
             this.lblList8.Name = "lblList8";
-            this.lblList8.Size = new System.Drawing.Size(110, 54);
+            this.lblList8.Size = new System.Drawing.Size(122, 74);
             this.lblList8.TabIndex = 0;
             this.lblList8.Text = "000";
             // 
@@ -310,10 +311,10 @@
             // lblList7
             // 
             this.lblList7.AutoSize = true;
-            this.lblList7.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList7.Location = new System.Drawing.Point(182, 8);
+            this.lblList7.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList7.Location = new System.Drawing.Point(182, -5);
             this.lblList7.Name = "lblList7";
-            this.lblList7.Size = new System.Drawing.Size(110, 54);
+            this.lblList7.Size = new System.Drawing.Size(122, 74);
             this.lblList7.TabIndex = 0;
             this.lblList7.Text = "000";
             // 
@@ -331,10 +332,10 @@
             // lblList6
             // 
             this.lblList6.AutoSize = true;
-            this.lblList6.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList6.Location = new System.Drawing.Point(182, 8);
+            this.lblList6.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList6.Location = new System.Drawing.Point(182, -5);
             this.lblList6.Name = "lblList6";
-            this.lblList6.Size = new System.Drawing.Size(110, 54);
+            this.lblList6.Size = new System.Drawing.Size(122, 74);
             this.lblList6.TabIndex = 0;
             this.lblList6.Text = "000";
             // 
@@ -352,10 +353,10 @@
             // lblList5
             // 
             this.lblList5.AutoSize = true;
-            this.lblList5.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList5.Location = new System.Drawing.Point(182, 8);
+            this.lblList5.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList5.Location = new System.Drawing.Point(182, -5);
             this.lblList5.Name = "lblList5";
-            this.lblList5.Size = new System.Drawing.Size(110, 54);
+            this.lblList5.Size = new System.Drawing.Size(122, 74);
             this.lblList5.TabIndex = 0;
             this.lblList5.Text = "000";
             // 
@@ -373,10 +374,10 @@
             // lblList4
             // 
             this.lblList4.AutoSize = true;
-            this.lblList4.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList4.Location = new System.Drawing.Point(179, 8);
+            this.lblList4.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList4.Location = new System.Drawing.Point(179, -5);
             this.lblList4.Name = "lblList4";
-            this.lblList4.Size = new System.Drawing.Size(110, 54);
+            this.lblList4.Size = new System.Drawing.Size(122, 74);
             this.lblList4.TabIndex = 0;
             this.lblList4.Text = "000";
             // 
@@ -394,10 +395,10 @@
             // lblList3
             // 
             this.lblList3.AutoSize = true;
-            this.lblList3.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList3.Location = new System.Drawing.Point(179, 6);
+            this.lblList3.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList3.Location = new System.Drawing.Point(179, -7);
             this.lblList3.Name = "lblList3";
-            this.lblList3.Size = new System.Drawing.Size(110, 54);
+            this.lblList3.Size = new System.Drawing.Size(122, 74);
             this.lblList3.TabIndex = 0;
             this.lblList3.Text = "000";
             // 
@@ -415,10 +416,10 @@
             // lblList2
             // 
             this.lblList2.AutoSize = true;
-            this.lblList2.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList2.Location = new System.Drawing.Point(180, 1);
+            this.lblList2.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList2.Location = new System.Drawing.Point(180, -12);
             this.lblList2.Name = "lblList2";
-            this.lblList2.Size = new System.Drawing.Size(110, 54);
+            this.lblList2.Size = new System.Drawing.Size(122, 74);
             this.lblList2.TabIndex = 0;
             this.lblList2.Text = "000";
             // 
@@ -438,19 +439,20 @@
             // lblList1
             // 
             this.lblList1.AutoSize = true;
-            this.lblList1.Font = new System.Drawing.Font("Verdana", 33.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList1.Location = new System.Drawing.Point(182, 1);
+            this.lblList1.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList1.Location = new System.Drawing.Point(182, -12);
             this.lblList1.Name = "lblList1";
-            this.lblList1.Size = new System.Drawing.Size(110, 54);
+            this.lblList1.Size = new System.Drawing.Size(122, 74);
             this.lblList1.TabIndex = 0;
             this.lblList1.Text = "000";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(104, 1);
+            this.label4.Location = new System.Drawing.Point(116, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(271, 65);
             this.label4.TabIndex = 2;
@@ -466,7 +468,7 @@
             this.pnlCallFirst.Controls.Add(this.lblCallFirt);
             this.pnlCallFirst.Location = new System.Drawing.Point(11, 269);
             this.pnlCallFirst.Name = "pnlCallFirst";
-            this.pnlCallFirst.Size = new System.Drawing.Size(1041, 97);
+            this.pnlCallFirst.Size = new System.Drawing.Size(1719, 97);
             this.pnlCallFirst.TabIndex = 3;
             this.pnlCallFirst.Visible = false;
             // 
@@ -474,12 +476,14 @@
             // 
             this.lblCallTableFirst.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCallTableFirst.AutoSize = true;
-            this.lblCallTableFirst.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTableFirst.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCallTableFirst.ForeColor = System.Drawing.Color.White;
-            this.lblCallTableFirst.Location = new System.Drawing.Point(900, 13);
+            this.lblCallTableFirst.Location = new System.Drawing.Point(1410, 13);
             this.lblCallTableFirst.Name = "lblCallTableFirst";
-            this.lblCallTableFirst.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTableFirst.Size = new System.Drawing.Size(92, 74);
             this.lblCallTableFirst.TabIndex = 9;
+            this.lblCallTableFirst.Text = "00";
+            this.lblCallTableFirst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
@@ -491,9 +495,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(511, 10);
+            this.button2.Location = new System.Drawing.Point(592, 10);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 84);
+            this.button2.Size = new System.Drawing.Size(707, 84);
             this.button2.TabIndex = 8;
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.UseVisualStyleBackColor = true;
@@ -519,7 +523,7 @@
             this.pnlCall2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlCall2.Location = new System.Drawing.Point(11, 384);
             this.pnlCall2.Name = "pnlCall2";
-            this.pnlCall2.Size = new System.Drawing.Size(1041, 97);
+            this.pnlCall2.Size = new System.Drawing.Size(1719, 97);
             this.pnlCall2.TabIndex = 4;
             this.pnlCall2.Visible = false;
             // 
@@ -533,9 +537,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(511, 3);
+            this.button3.Location = new System.Drawing.Point(592, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 84);
+            this.button3.Size = new System.Drawing.Size(707, 84);
             this.button3.TabIndex = 10;
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.UseVisualStyleBackColor = true;
@@ -544,12 +548,13 @@
             // 
             this.lblCallTable2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCallTable2.AutoSize = true;
-            this.lblCallTable2.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable2.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCallTable2.ForeColor = System.Drawing.Color.Black;
-            this.lblCallTable2.Location = new System.Drawing.Point(900, 9);
+            this.lblCallTable2.Location = new System.Drawing.Point(1410, 13);
             this.lblCallTable2.Name = "lblCallTable2";
-            this.lblCallTable2.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable2.Size = new System.Drawing.Size(92, 74);
             this.lblCallTable2.TabIndex = 9;
+            this.lblCallTable2.Text = "00";
             // 
             // lblCall2
             // 
@@ -572,7 +577,7 @@
             this.pnlCall3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlCall3.Location = new System.Drawing.Point(11, 507);
             this.pnlCall3.Name = "pnlCall3";
-            this.pnlCall3.Size = new System.Drawing.Size(1041, 97);
+            this.pnlCall3.Size = new System.Drawing.Size(1719, 97);
             this.pnlCall3.TabIndex = 5;
             this.pnlCall3.Visible = false;
             // 
@@ -586,9 +591,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(511, 8);
+            this.button4.Location = new System.Drawing.Point(592, 8);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(98, 84);
+            this.button4.Size = new System.Drawing.Size(707, 84);
             this.button4.TabIndex = 10;
             this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button4.UseVisualStyleBackColor = true;
@@ -597,12 +602,13 @@
             // 
             this.lblCallTable3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCallTable3.AutoSize = true;
-            this.lblCallTable3.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable3.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCallTable3.ForeColor = System.Drawing.Color.Black;
-            this.lblCallTable3.Location = new System.Drawing.Point(900, 8);
+            this.lblCallTable3.Location = new System.Drawing.Point(1410, 8);
             this.lblCallTable3.Name = "lblCallTable3";
-            this.lblCallTable3.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable3.Size = new System.Drawing.Size(92, 74);
             this.lblCallTable3.TabIndex = 9;
+            this.lblCallTable3.Text = "00";
             // 
             // lblCall3
             // 
@@ -625,7 +631,7 @@
             this.pnlCall4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlCall4.Location = new System.Drawing.Point(11, 627);
             this.pnlCall4.Name = "pnlCall4";
-            this.pnlCall4.Size = new System.Drawing.Size(1041, 97);
+            this.pnlCall4.Size = new System.Drawing.Size(1719, 97);
             this.pnlCall4.TabIndex = 6;
             this.pnlCall4.Visible = false;
             // 
@@ -639,9 +645,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(511, 8);
+            this.button5.Location = new System.Drawing.Point(592, 8);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(98, 84);
+            this.button5.Size = new System.Drawing.Size(707, 84);
             this.button5.TabIndex = 10;
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button5.UseVisualStyleBackColor = true;
@@ -650,12 +656,13 @@
             // 
             this.lblCallTable4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCallTable4.AutoSize = true;
-            this.lblCallTable4.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable4.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCallTable4.ForeColor = System.Drawing.Color.Black;
-            this.lblCallTable4.Location = new System.Drawing.Point(900, 8);
+            this.lblCallTable4.Location = new System.Drawing.Point(1410, 13);
             this.lblCallTable4.Name = "lblCallTable4";
-            this.lblCallTable4.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable4.Size = new System.Drawing.Size(92, 74);
             this.lblCallTable4.TabIndex = 9;
+            this.lblCallTable4.Text = "00";
             // 
             // lblCall4
             // 
@@ -678,7 +685,7 @@
             this.pnlCall5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlCall5.Location = new System.Drawing.Point(11, 747);
             this.pnlCall5.Name = "pnlCall5";
-            this.pnlCall5.Size = new System.Drawing.Size(1041, 97);
+            this.pnlCall5.Size = new System.Drawing.Size(1719, 97);
             this.pnlCall5.TabIndex = 7;
             this.pnlCall5.Visible = false;
             // 
@@ -692,9 +699,9 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(511, 8);
+            this.button6.Location = new System.Drawing.Point(592, 8);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(98, 84);
+            this.button6.Size = new System.Drawing.Size(707, 84);
             this.button6.TabIndex = 10;
             this.button6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button6.UseVisualStyleBackColor = true;
@@ -703,12 +710,13 @@
             // 
             this.lblCallTable5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCallTable5.AutoSize = true;
-            this.lblCallTable5.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable5.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCallTable5.ForeColor = System.Drawing.Color.Black;
-            this.lblCallTable5.Location = new System.Drawing.Point(900, 8);
+            this.lblCallTable5.Location = new System.Drawing.Point(1410, 13);
             this.lblCallTable5.Name = "lblCallTable5";
-            this.lblCallTable5.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable5.Size = new System.Drawing.Size(92, 74);
             this.lblCallTable5.TabIndex = 9;
+            this.lblCallTable5.Text = "00";
             // 
             // lblCall5
             // 
@@ -731,7 +739,7 @@
             this.pnlCall6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlCall6.Location = new System.Drawing.Point(11, 863);
             this.pnlCall6.Name = "pnlCall6";
-            this.pnlCall6.Size = new System.Drawing.Size(1041, 97);
+            this.pnlCall6.Size = new System.Drawing.Size(1719, 97);
             this.pnlCall6.TabIndex = 8;
             this.pnlCall6.Visible = false;
             // 
@@ -745,9 +753,9 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(511, 10);
+            this.button7.Location = new System.Drawing.Point(592, 10);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(98, 84);
+            this.button7.Size = new System.Drawing.Size(707, 84);
             this.button7.TabIndex = 10;
             this.button7.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button7.UseVisualStyleBackColor = true;
@@ -756,12 +764,13 @@
             // 
             this.lblCallTable6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCallTable6.AutoSize = true;
-            this.lblCallTable6.Font = new System.Drawing.Font("Segoe UI", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCallTable6.Font = new System.Drawing.Font("Segoe UI", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblCallTable6.ForeColor = System.Drawing.Color.Black;
-            this.lblCallTable6.Location = new System.Drawing.Point(900, 6);
+            this.lblCallTable6.Location = new System.Drawing.Point(1410, 10);
             this.lblCallTable6.Name = "lblCallTable6";
-            this.lblCallTable6.Size = new System.Drawing.Size(0, 84);
+            this.lblCallTable6.Size = new System.Drawing.Size(92, 74);
             this.lblCallTable6.TabIndex = 9;
+            this.lblCallTable6.Text = "00";
             // 
             // lblCall6
             // 
@@ -780,15 +789,15 @@
             // 
             // timerPlayer
             // 
-            this.timerPlayer.Interval = 5000;
+            this.timerPlayer.Interval = 7000;
             this.timerPlayer.Tick += new System.EventHandler(this.timerPlayer_Tick);
             // 
             // FrmScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Cyan;
-            this.ClientSize = new System.Drawing.Size(1544, 983);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(2222, 983);
             this.Controls.Add(this.pnlCall6);
             this.Controls.Add(this.pnlCall5);
             this.Controls.Add(this.pnlCall4);
@@ -798,7 +807,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmScreen";
             this.Text = "Şahinbey Belediyesi";

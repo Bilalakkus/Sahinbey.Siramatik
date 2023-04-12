@@ -12,7 +12,7 @@ namespace Sahinbey.Siramatik.Services
 {
     public class TicketService : ITicketService
     {
-        public async Task<IEnumerable<ResponseTicketDto>> CallTicket(CallTicketDto dto)
+        public async Task<ResponseTicketDto> CallTicket(CallTicketDto dto)
         {
             string host = Constant.API_SERVICE;
             //string host = Constant.API_SERVICE;
@@ -24,7 +24,7 @@ namespace Sahinbey.Siramatik.Services
             string uri = host + path + "/CallTicket";
             HttpResponseMessage response = await client.PostAsync(uri, data);
             var jsonResult = await response.Content.ReadAsStringAsync();
-            IEnumerable<ResponseTicketDto> tickets = JsonConvert.DeserializeObject<IEnumerable<ResponseTicketDto>>(jsonResult);
+            ResponseTicketDto tickets = JsonConvert.DeserializeObject<ResponseTicketDto>(jsonResult);
             //biletleri ekrana yaz
             return tickets;
         }

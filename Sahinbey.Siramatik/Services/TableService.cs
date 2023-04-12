@@ -38,6 +38,22 @@ namespace Sahinbey.Siramatik.Services
                 return false;
             }
         }
+        public async Task<bool> EmployeeExit(int UserId)
+        {
+            string url = Constant.API_SERVICE + "/api/v1/EmployeeTableMoments/GetEmployeeExit/" + UserId;
+            var response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode == true)
+            {
+                string res = await response.Content.ReadAsStringAsync();
+                bool result = JsonConvert.DeserializeObject<bool>(res);
+                if (result)
+                    return true;
+                else
+                    return false;
+            }
+            else
+                return false;
+        }
         public Task<IEnumerable<Table>> GetAllAsync()
         {
             throw new NotImplementedException();

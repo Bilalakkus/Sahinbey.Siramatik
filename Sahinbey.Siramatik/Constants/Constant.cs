@@ -8,8 +8,8 @@ namespace Sahinbey.Siramatik.Constants
 {
     public class Constant
     {
-        public const string API_SERVICE = "https://localhost:7117";
-        //public const string API_SERVICE = "https://numaratorapi.sahinbey.bel.tr";
+        //public const string API_SERVICE = "https://localhost:7117";
+        public const string API_SERVICE = "https://numaratorapi.sahinbey.bel.tr";
 
     }
 }

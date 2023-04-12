@@ -38,6 +38,7 @@ namespace Sahinbey.Siramatik
         private async void timerListRefresh_Tick(object sender, EventArgs e)
         {
             var tickets = await IOCContainer.Resolve<ITicketService>().GetAllAsync(2);
+            lblTBekleyen.Text = tickets.Count().ToString();
             listWaidTicket.DataSource = tickets;
             listWaidTicket.DisplayMember = "TicketNo";
             listWaidTicket.ValueMember = "TicketNo";
@@ -51,6 +52,12 @@ namespace Sahinbey.Siramatik
                 TableId=ActiveMasa.MasaId
             };
             var tickets = await IOCContainer.Resolve<ITicketService>().CallTicket(callTicketDto);
+            txtBiletNo.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(tickets.TicketNo),3);
+            //txtGecenSure.Text = (DateTime.Now - tickets.Date).TotalHours + ":" + +(DateTime.Now - tickets.Date).TotalMinutes;// +":" + (DateTime.Now - tickets.Date).TotalSeconds;
+            TimeSpan span = DateTime.Now.Subtract(tickets.Date);
+            txtGecenSure.Text = AddNumaraFirstZero.SifirEkle(span.Hours) + ":"+ AddNumaraFirstZero.SifirEkle(span.Minutes) + ":" + AddNumaraFirstZero.SifirEkle(span.Seconds);
+            txtAlinmaSaati.Text = tickets.Date.ToString();
+            txtIslemNo.Text = tickets.GroupName;
         }
     }
 }

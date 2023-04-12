@@ -35,7 +35,7 @@
             this.lblMasaName = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblCagrilan = new System.Windows.Forms.Label();
-            this.lblBekleyen = new System.Windows.Forms.Label();
+            this.lblTBekleyen = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.txtGecenSüre = new System.Windows.Forms.TextBox();
+            this.txtGecenSure = new System.Windows.Forms.TextBox();
             this.txtTransfer = new System.Windows.Forms.TextBox();
             this.txtAlinmaSaati = new System.Windows.Forms.TextBox();
             this.txtIslemNo = new System.Windows.Forms.TextBox();
@@ -87,7 +87,7 @@
             this.groupBox1.Controls.Add(this.lblMasaName);
             this.groupBox1.Controls.Add(this.lblUserName);
             this.groupBox1.Controls.Add(this.lblCagrilan);
-            this.groupBox1.Controls.Add(this.lblBekleyen);
+            this.groupBox1.Controls.Add(this.lblTBekleyen);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.button1);
@@ -143,18 +143,18 @@
             this.lblCagrilan.TabIndex = 10;
             this.lblCagrilan.Text = "00";
             // 
-            // lblBekleyen
+            // lblTBekleyen
             // 
-            this.lblBekleyen.AutoSize = true;
-            this.lblBekleyen.BackColor = System.Drawing.Color.Red;
-            this.lblBekleyen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblBekleyen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblBekleyen.ForeColor = System.Drawing.Color.White;
-            this.lblBekleyen.Location = new System.Drawing.Point(985, 111);
-            this.lblBekleyen.Name = "lblBekleyen";
-            this.lblBekleyen.Size = new System.Drawing.Size(30, 23);
-            this.lblBekleyen.TabIndex = 9;
-            this.lblBekleyen.Text = "00";
+            this.lblTBekleyen.AutoSize = true;
+            this.lblTBekleyen.BackColor = System.Drawing.Color.Red;
+            this.lblTBekleyen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTBekleyen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTBekleyen.ForeColor = System.Drawing.Color.White;
+            this.lblTBekleyen.Location = new System.Drawing.Point(985, 111);
+            this.lblTBekleyen.Name = "lblTBekleyen";
+            this.lblTBekleyen.Size = new System.Drawing.Size(30, 23);
+            this.lblTBekleyen.TabIndex = 9;
+            this.lblTBekleyen.Text = "00";
             // 
             // label10
             // 
@@ -254,7 +254,7 @@
             this.groupBox4.Controls.Add(this.button6);
             this.groupBox4.Controls.Add(this.dataGridView2);
             this.groupBox4.Controls.Add(this.groupBox5);
-            this.groupBox4.Controls.Add(this.txtGecenSüre);
+            this.groupBox4.Controls.Add(this.txtGecenSure);
             this.groupBox4.Controls.Add(this.txtTransfer);
             this.groupBox4.Controls.Add(this.txtAlinmaSaati);
             this.groupBox4.Controls.Add(this.txtIslemNo);
@@ -265,7 +265,7 @@
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.Location = new System.Drawing.Point(384, 270);
+            this.groupBox4.Location = new System.Drawing.Point(346, 270);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(656, 410);
             this.groupBox4.TabIndex = 5;
@@ -276,6 +276,7 @@
             // 
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button6.Enabled = false;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
@@ -322,6 +323,7 @@
             // 
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.Enabled = false;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
@@ -353,6 +355,7 @@
             // 
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button4.Enabled = false;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
@@ -368,6 +371,7 @@
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.Enabled = false;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
@@ -379,14 +383,14 @@
             this.button3.Text = "Yenile";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // txtGecenSüre
+            // txtGecenSure
             // 
-            this.txtGecenSüre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGecenSüre.Enabled = false;
-            this.txtGecenSüre.Location = new System.Drawing.Point(250, 165);
-            this.txtGecenSüre.Name = "txtGecenSüre";
-            this.txtGecenSüre.Size = new System.Drawing.Size(301, 29);
-            this.txtGecenSüre.TabIndex = 9;
+            this.txtGecenSure.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGecenSure.Enabled = false;
+            this.txtGecenSure.Location = new System.Drawing.Point(250, 165);
+            this.txtGecenSure.Name = "txtGecenSure";
+            this.txtGecenSure.Size = new System.Drawing.Size(301, 29);
+            this.txtGecenSure.TabIndex = 9;
             // 
             // txtTransfer
             // 
@@ -474,9 +478,9 @@
             this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox6.Controls.Add(this.listWaidTicket);
             this.groupBox6.Controls.Add(this.groupBox3);
-            this.groupBox6.Location = new System.Drawing.Point(0, 257);
+            this.groupBox6.Location = new System.Drawing.Point(0, 190);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(381, 423);
+            this.groupBox6.Size = new System.Drawing.Size(324, 494);
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
             // 
@@ -485,16 +489,16 @@
             this.listWaidTicket.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listWaidTicket.FormattingEnabled = true;
             this.listWaidTicket.ItemHeight = 47;
-            this.listWaidTicket.Location = new System.Drawing.Point(2, 84);
+            this.listWaidTicket.Location = new System.Drawing.Point(5, 63);
             this.listWaidTicket.Name = "listWaidTicket";
-            this.listWaidTicket.Size = new System.Drawing.Size(373, 333);
+            this.listWaidTicket.Size = new System.Drawing.Size(314, 427);
             this.listWaidTicket.TabIndex = 6;
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Location = new System.Drawing.Point(0, 0);
+            this.groupBox3.Location = new System.Drawing.Point(12, 23);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(381, 79);
             this.groupBox3.TabIndex = 5;
@@ -504,7 +508,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(33, 19);
+            this.label2.Location = new System.Drawing.Point(-9, -12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(323, 45);
             this.label2.TabIndex = 0;
@@ -577,7 +581,7 @@
         private Label label8;
         private Label label7;
         private TextBox txtBiletNo;
-        private TextBox txtGecenSüre;
+        private TextBox txtGecenSure;
         private TextBox txtTransfer;
         private TextBox txtAlinmaSaati;
         private TextBox txtIslemNo;
@@ -587,7 +591,7 @@
         private Button button3;
         private Label label9;
         private Label label10;
-        private Label lblBekleyen;
+        private Label lblTBekleyen;
         private Label lblCagrilan;
         private GroupBox groupBox6;
         private Button button6;

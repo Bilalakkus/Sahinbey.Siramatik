@@ -20,6 +20,8 @@ namespace Sahinbey.Siramatik
 {
     public partial class FrmScreen : Form
     {
+        
+
         public FrmScreen()
         {
             InitializeComponent();
@@ -75,19 +77,21 @@ namespace Sahinbey.Siramatik
             //biletleri ekrana yaz
             AddCallList(tickets);
         }
-        private void AddCallList(List<DataScreen> list)
+        private async void AddCallList(List<DataScreen> list)
         {
             string beforeTicketName = lblCallFirt.Text;
             ClearCallList();
             foreach (var item in list)
             {
                 int i = list.ToList().IndexOf(item);
-                    if (i == 0)
+                var masa = await IOCContainer.Resolve<ITableService>().GetByIdAsync(item.MasaId);
+                if (i == 0)
                     {
 
                         string newTicketName = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallFirt.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
-                        lblCallTableFirst.Text = item.MasaId.ToString();
+                        
+                        lblCallTableFirst.Text =masa.TableName;
                         pnlCallFirst.Visible = true;
 
                         if (beforeTicketName != newTicketName)
@@ -96,31 +100,31 @@ namespace Sahinbey.Siramatik
                     else if (i == 1)
                     {
                         lblCall2.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
-                        lblCallTable2.Text = item.MasaId.ToString();
+                        lblCallTable2.Text = masa.TableName;
                         pnlCall2.Visible = true;
                     }
                     else if (i == 2)
                     {
                         lblCall3.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
-                        lblCallTable3.Text = item.MasaId.ToString();
+                        lblCallTable3.Text = masa.TableName;
                         pnlCall3.Visible = true;
                     }
                     else if (i == 3)
                     {
                         lblCall4.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
-                        lblCallTable4.Text = item.MasaId.ToString();
+                        lblCallTable4.Text = masa.TableName;
                         pnlCall4.Visible = true;
                     }
                     else if (i == 4)
                     {
                         lblCall5.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
-                        lblCallTable5.Text = item.MasaId.ToString();
+                        lblCallTable5.Text = masa.TableName;
                         pnlCall5.Visible = true;
                     }
                     else if (i == 5)
                     {
                         lblList6.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
-                        lblCallTable6.Text = item.MasaId.ToString();
+                        lblCallTable6.Text = masa.TableName;
                         pnlCall6.Visible = true;
                     }
                 }

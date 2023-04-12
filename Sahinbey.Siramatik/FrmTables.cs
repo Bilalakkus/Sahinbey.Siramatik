@@ -26,19 +26,20 @@ namespace Sahinbey.Siramatik
             int masaId = await IOCContainer.Resolve<ITableService>().IsItHaveTable(Convert.ToInt32(lblUserId.Text));
             if (masaId > 0)
             {
-                var data = await IOCContainer.Resolve<ITableService>().GetByIdAsync(Convert.ToInt32(masaId));
-                if (data != null)
-                {
-                    
-                    FrmEmploye frmEmploye = new FrmEmploye();
-                    frmEmploye.lblMasaName.Text = data.TableName;
-                    frmEmploye.lblUserId.Text = lblUserId.Text;
-                    frmEmploye.Show();
-                    this.Close();
-                }
+                if (await IOCContainer.Resolve<ITableService>().TablePasiveAsync(masaId))
+                    if (await IOCContainer.Resolve<ITableService>().EmployeeExit(Convert.ToInt32(lblUserId.Text)))
+                    {
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Kullanıcı çıkış yapmamış. Oturum kapatılamadı!");
+                        return;
+                    }
+
             }
-            else
-                ListGroup();
+
+            ListGroup();
         }
         private async void ListGroup()
         {
@@ -106,7 +107,7 @@ namespace Sahinbey.Siramatik
                     MessageBox.Show("HATA! Masa Açılamadı!");
                 else if (!await IOCContainer.Resolve<ITableService>().AddAsync(addTable))
                     MessageBox.Show("HATA! Masa açılırken işlem hareketi kaydedilemedi");
-                
+
                 FrmEmploye frmEmploye = new FrmEmploye();
                 ActiveMasa.MasaId = tableId;
                 ActiveMasa.GroupId = Convert.ToInt32(cmbGroup.SelectedValue);
@@ -121,7 +122,7 @@ namespace Sahinbey.Siramatik
         private async void cmbGroup_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (cmbGroup.SelectedIndex>0)
+            if (cmbGroup.SelectedIndex > 0)
             {
                 var tableList = await IOCContainer.Resolve<ITableService>().GetByGroupIdAsync(Convert.ToInt32(cmbGroup.SelectedValue));
                 if (tableList != null)
@@ -147,7 +148,7 @@ namespace Sahinbey.Siramatik
                 {
                     //await JSRuntime.Current.InvokeAsync<string>("alert", "Warning, the credentials you have entered are incorrect.");
                     //return false;
-                } 
+                }
             }
         }
     }

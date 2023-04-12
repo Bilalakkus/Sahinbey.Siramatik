@@ -25,10 +25,12 @@ namespace Sahinbey.Siramatik
         {
             if (txtPasword.Text != "" && txtUser.Text != "")
             {
-                var user = await IOCContainer.Resolve<IUserService>().GetByIdAsync(txtUser.Text,txtPasword.Text);
-                ActiveUser.AdSoyad = user.AdSoyad;
-                ActiveUser.No = user.No;
-                ActiveUser.KioskPages = user.KioskPages;
+                try
+                {
+                    var user = await IOCContainer.Resolve<IUserService>().GetByIdAsync(txtUser.Text, txtPasword.Text);
+                    ActiveUser.AdSoyad = user.AdSoyad;
+                    ActiveUser.No = user.No;
+                    ActiveUser.KioskPages = user.KioskPages;
 
                 //biletleri ekrana yaz
                 if (user.No == null && user.No <= 0)
@@ -39,24 +41,43 @@ namespace Sahinbey.Siramatik
                 {
                     if (user.KioskPages == 1)//personel vatadaş çağırma yetkisi
                     {
-                        FrmTables frmEmploye = new FrmTables();
-                        frmEmploye.lblUserId.Text = user.No.ToString();
-                        frmEmploye.Show();
-                        //this.Close();
+                        //FrmTables frmEmploye = new FrmTables();
+                        //frmEmploye.lblUserId.Text = user.No.ToString();
+                        //frmEmploye.Show();
+                        ////this.Close();
+                        //Master master = new Master();
+                        //master.lblUserId.Text = user.No.ToString();
+                        //master.Show();
+                        this.Close();
                     }
                     else
                     {
                         MessageBox.Show("Yetkiniz Yok");
                     }
                 }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Kullanıcı adı veya şifre hatalı!","Hatalı İşlem!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Master master = new Master();
+                    master.WindowState = FormWindowState.Minimized;
+                    master.Enabled=false;
+
+                }
             }
             else
                 MessageBox.Show("Lütfen kullanıcı adı ve şifre girin!");
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox2_DoubleClick(object sender, EventArgs e)
         {
             FrmAdmin frmAdmin = new FrmAdmin();
             frmAdmin.Show();
+            this.Close();
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }
