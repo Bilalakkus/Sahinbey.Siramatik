@@ -11,5 +11,6 @@ namespace Sahinbey.Siramatik.Services
     {
         Task<IEnumerable<ResponseUserDto>> GetAllAsync();
         Task<ResponseUserDto> GetByIdAsync(string userName, string pass);
+        Task<int> UserTotalTransaction(int userId);
     }
 }

@@ -11,6 +11,7 @@ namespace Sahinbey.Siramatik.Services
 {
     public class UserService : IUserService
     {
+        HttpClient client = new HttpClient();
         public Task<IEnumerable<ResponseUserDto>> GetAllAsync()
         {
             throw new NotImplementedException();
@@ -34,6 +35,19 @@ namespace Sahinbey.Siramatik.Services
             var jsonResult = await response.Content.ReadAsStringAsync();
             ResponseUserDto user = JsonConvert.DeserializeObject<ResponseUserDto>(jsonResult);
             return user;
+        }
+
+        public async Task<int> UserTotalTransaction(int userId)
+        {
+            string url = Constant.API_SERVICE + "/api/v1/Users/GetUserTotalTransaction/" + userId;
+            var response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode == true)
+            {
+                string res = await response.Content.ReadAsStringAsync();
+                int result = JsonConvert.DeserializeObject<int>(res);
+                return result;
+            }
+            return 0;
         }
     }
 }

@@ -42,13 +42,16 @@ namespace Sahinbey.Siramatik
             listWaidTicket.DataSource = tickets;
             listWaidTicket.DisplayMember = "TicketNo";
             listWaidTicket.ValueMember = "TicketNo";
+
+            //çağrılan bilet sayısı
+            lblCagrilan.Text =""+ await IOCContainer.Resolve<IUserService>().UserTotalTransaction(ActiveUser.No);
         }
         private async void btnPersonCall_Click(object sender, EventArgs e)
         {
             CallTicketDto callTicketDto = new CallTicketDto
             {
                 GroupId=ActiveMasa.GroupId,
-                IserId=ActiveUser.No,
+                UserId=ActiveUser.No,
                 TableId=ActiveMasa.MasaId
             };
             var tickets = await IOCContainer.Resolve<ITicketService>().CallTicket(callTicketDto);

@@ -111,7 +111,7 @@ namespace Sahinbey.Siramatik
                 FrmEmploye frmEmploye = new FrmEmploye();
                 ActiveMasa.MasaId = tableId;
                 ActiveMasa.GroupId = Convert.ToInt32(cmbGroup.SelectedValue);
-                frmEmploye.lblUserId.Text = lblUserId.Text;
+                
                 frmEmploye.lblMasaName.Text = btn.Text;
                 frmEmploye.Show();
                 this.Close();

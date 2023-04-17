@@ -20,7 +20,7 @@ namespace Sahinbey.Siramatik
 {
     public partial class FrmScreen : Form
     {
-        
+
 
         public FrmScreen()
         {
@@ -47,53 +47,38 @@ namespace Sahinbey.Siramatik
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
         private async void ListLoad()
         {
-            var tickets = await IOCContainer.Resolve<ITicketService>().GetAllAsync(2);
-            
-            AddList(tickets);
+            try
+            {
+                var tickets = await IOCContainer.Resolve<ITicketService>().GetAllAsync(2);
+                AddList(tickets);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
-
         private async void CallListLoad()
         {
-            string host = "https://numaratorapi.sahinbey.bel.tr";
-            //string host = "https://localhost:7117";
-            string path = "/api/v1/Tickets";
-            HttpClient client = new HttpClient();
-            CreateTicket query = new CreateTicket
-            {
-                GroupId = 2
-            };
-            var json = JsonConvert.SerializeObject(query);
-            var data = new StringContent(json, Encoding.UTF8, "application/json");
-            string uri = host + path + "/GetAllCallGroup";
-            HttpResponseMessage response = await client.PostAsync(uri, data);
-            var jsonResult = await response.Content.ReadAsStringAsync();
-            List<DataScreen> tickets = JsonConvert.DeserializeObject<List<DataScreen>>(jsonResult);
-            //biletleri ekrana yaz
-            AddCallList(tickets);
-        }
-        private async void AddCallList(List<DataScreen> list)
-        {
+           var list = await IOCContainer.Resolve<ITicketService>().CallListLoad();
             string beforeTicketName = lblCallFirt.Text;
             ClearCallList();
             foreach (var item in list)
             {
                 int i = list.ToList().IndexOf(item);
-                var masa = await IOCContainer.Resolve<ITableService>().GetByIdAsync(item.MasaId);
-                if (i == 0)
+                if (item.MasaId > 0)
+                {
+                    var masa = await IOCContainer.Resolve<ITableService>().GetByIdAsync(item.MasaId);
+                    if (i == 0)
                     {
-
                         string newTicketName = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallFirt.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
-                        
-                        lblCallTableFirst.Text =masa.TableName;
+                        lblCallTableFirst.Text = masa.TableName;
                         pnlCallFirst.Visible = true;
-
                         if (beforeTicketName != newTicketName)
                             Play();
                     }
@@ -123,11 +108,12 @@ namespace Sahinbey.Siramatik
                     }
                     else if (i == 5)
                     {
-                        lblList6.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
+                        lblCall6.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.ticketNo.ToString()), 3);
                         lblCallTable6.Text = masa.TableName;
                         pnlCall6.Visible = true;
                     }
                 }
+            }
         }
         private void ClearCallList()
         {
@@ -155,11 +141,14 @@ namespace Sahinbey.Siramatik
         private void AddList(IEnumerable<ResponseTicketDto> list)
         {
             ListClear();
+            int i = 0;
             foreach (var item in list)
             {
-                int i = list.ToList().IndexOf(item);
+                i = list.ToList().IndexOf(item);
                 if (Convert.ToInt32(item.TicketNo.ToString()) < 1000)
                 {
+                    if (i > 10)
+                        return;
                     if (i == 0)
                     {
                         lblList1.Text = AddNumaraFirstZero.SifirEkle(Convert.ToInt32(item.TicketNo.ToString()), 3);
@@ -238,10 +227,7 @@ namespace Sahinbey.Siramatik
             pnlList9.Visible = false;
             pnlList10.Visible = false;
         }
-        private static void LoadList()
-        {
-
-        }
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblKayan.Text = lblKayan.Text.Substring(2) + lblKayan.Text.Substring(0, 2);
@@ -252,35 +238,20 @@ namespace Sahinbey.Siramatik
         {
             this.Close();
         }
-        private void NewButton(int sutun, int i, string name, int btnHeint, int btnwinth)
-        {
-            Button dynamicButton = new Button();
-            dynamicButton.Height = btnHeint;
-            dynamicButton.Width = btnwinth;
-            dynamicButton.BackColor = Color.Blue;
-            dynamicButton.ForeColor = Color.White;
-            dynamicButton.Location = new Point(btnwinth + 500, (i * sutun) + 1000);
-            dynamicButton.Text = name;
-            dynamicButton.Name = name;
-            dynamicButton.Font = new Font("Georgia", 16);
-            //dynamicButton.BackgroundImage = Properties.Resources.dashborad1;
-            dynamicButton.TextAlign = ContentAlignment.MiddleCenter;
-            //dynamicButton.Click += new EventHandler(TableDetail_Click);
-            Controls.Add(dynamicButton);
-        }
         private void timer3_Tick(object sender, EventArgs e)
         {
             pnlCallFirst.BackColor = pnlCallFirst.BackColor == Color.Red ? Color.White : Color.Red;
-            
+
         }
-        
+
 
         private void timerPlayer_Tick(object sender, EventArgs e)
         {
             ListLoad();
             CallListLoad();
+
         }
 
-        
+
     }
 }

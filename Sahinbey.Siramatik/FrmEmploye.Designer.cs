@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmploye));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblUserId = new System.Windows.Forms.Label();
             this.lblMasaName = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblCagrilan = new System.Windows.Forms.Label();
@@ -83,7 +82,6 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupBox1.Controls.Add(this.lblUserId);
             this.groupBox1.Controls.Add(this.lblMasaName);
             this.groupBox1.Controls.Add(this.lblUserName);
             this.groupBox1.Controls.Add(this.lblCagrilan);
@@ -99,14 +97,6 @@
             this.groupBox1.Size = new System.Drawing.Size(1096, 189);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            // 
-            // lblUserId
-            // 
-            this.lblUserId.AutoSize = true;
-            this.lblUserId.Location = new System.Drawing.Point(337, 160);
-            this.lblUserId.Name = "lblUserId";
-            this.lblUserId.Size = new System.Drawing.Size(0, 15);
-            this.lblUserId.TabIndex = 13;
             // 
             // lblMasaName
             // 
@@ -132,29 +122,29 @@
             // 
             // lblCagrilan
             // 
-            this.lblCagrilan.AutoSize = true;
             this.lblCagrilan.BackColor = System.Drawing.Color.Red;
             this.lblCagrilan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblCagrilan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCagrilan.ForeColor = System.Drawing.Color.White;
             this.lblCagrilan.Location = new System.Drawing.Point(985, 137);
             this.lblCagrilan.Name = "lblCagrilan";
-            this.lblCagrilan.Size = new System.Drawing.Size(30, 23);
+            this.lblCagrilan.Size = new System.Drawing.Size(40, 23);
             this.lblCagrilan.TabIndex = 10;
             this.lblCagrilan.Text = "00";
+            this.lblCagrilan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTBekleyen
             // 
-            this.lblTBekleyen.AutoSize = true;
             this.lblTBekleyen.BackColor = System.Drawing.Color.Red;
             this.lblTBekleyen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTBekleyen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTBekleyen.ForeColor = System.Drawing.Color.White;
             this.lblTBekleyen.Location = new System.Drawing.Point(985, 111);
             this.lblTBekleyen.Name = "lblTBekleyen";
-            this.lblTBekleyen.Size = new System.Drawing.Size(30, 23);
+            this.lblTBekleyen.Size = new System.Drawing.Size(40, 23);
             this.lblTBekleyen.TabIndex = 9;
             this.lblTBekleyen.Text = "00";
+            this.lblTBekleyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
@@ -603,7 +593,6 @@
         public Label lblMasaName;
         private GroupBox groupBox3;
         private Label label2;
-        public Label lblUserId;
         private ListBox listWaidTicket;
         private System.Windows.Forms.Timer timerListRefresh;
     }

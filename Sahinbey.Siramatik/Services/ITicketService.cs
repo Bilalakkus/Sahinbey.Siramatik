@@ -1,4 +1,5 @@
 ﻿using Sahinbey.Siramatik.DTOs.TicketDTOs;
+using Sahinbey.Siramatik.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace Sahinbey.Siramatik.Services
     {
         Task<IEnumerable<ResponseTicketDto>> GetAllAsync(int GroupId);
         Task<ResponseTicketDto> CallTicket(CallTicketDto dto);
+        Task<IEnumerable<DataScreen>> CallListLoad();
     }
 }
