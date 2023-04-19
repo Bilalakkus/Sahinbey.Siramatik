@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sahinbey.Siramatik", "Sahinbey.Siramatik\Sahinbey.Siramatik.csproj", "{A93B79B1-7064-4149-A19C-6EE4E3A194DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sahinbey.Siramatik", "Sahinbey.Siramatik\Sahinbey.Siramatik.csproj", "{A93B79B1-7064-4149-A19C-6EE4E3A194DC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SahinbeyNumarator", "SahinbeyNumarator\SahinbeyNumarator.vdproj", "{979C8A88-6A3E-407E-8674-D53F30D886E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{A93B79B1-7064-4149-A19C-6EE4E3A194DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A93B79B1-7064-4149-A19C-6EE4E3A194DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A93B79B1-7064-4149-A19C-6EE4E3A194DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979C8A88-6A3E-407E-8674-D53F30D886E1}.Debug|Any CPU.ActiveCfg = Debug
+		{979C8A88-6A3E-407E-8674-D53F30D886E1}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

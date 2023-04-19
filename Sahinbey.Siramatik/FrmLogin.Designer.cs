@@ -80,7 +80,6 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(183, 29);
             this.txtUser.TabIndex = 10;
-            this.txtUser.Text = "15580701018";
             // 
             // label2
             // 
@@ -114,7 +113,6 @@
             this.txtPasword.PasswordChar = '*';
             this.txtPasword.Size = new System.Drawing.Size(183, 29);
             this.txtPasword.TabIndex = 13;
-            this.txtPasword.Text = "1327bilal";
             // 
             // lblWarning
             // 

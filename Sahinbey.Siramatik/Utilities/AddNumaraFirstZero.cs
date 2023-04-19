@@ -35,6 +35,26 @@ namespace Sahinbey.Siramatik.Utilities
                 else
                     return sayi.ToString();
             }
+            if (rakam == 4)
+            {
+                if (sayi < 10)
+                {
+                    string newNumber = "000" + sayi;
+                    return newNumber;
+                }
+                else if (sayi < 100)
+                {
+                    string newNumber = "00" + sayi;
+                    return newNumber;
+                }
+                else if (sayi < 1000)
+                {
+                    string newNumber = "000" + sayi;
+                    return newNumber;
+                }
+                else
+                    return sayi.ToString();
+            }
             else
                 return sayi + "";
         }
