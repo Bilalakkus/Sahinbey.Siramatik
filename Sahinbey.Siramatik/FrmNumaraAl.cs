@@ -3,6 +3,7 @@ using Sahinbey.Siramatik.Constants;
 using Sahinbey.Siramatik.Model;
 using Sahinbey.Siramatik.Utilities;
 using System.Drawing.Printing;
+using System.Net.Http;
 using System.Text;
 
 namespace Sahinbey.Siramatik
@@ -46,6 +47,12 @@ namespace Sahinbey.Siramatik
 
         private async void btnEmlak_Click(object sender, EventArgs e)
         {
+            if (txtCallTime.Text!="")
+            {
+                var time = DateTime.Now - Convert.ToDateTime(txtCallTime.Text);
+                if (time.Seconds < 2)
+                    return;
+            }
             string host = Constant.API_SERVICE;
             //string host = Constant.API_SERVICE;
             string path = "/api/v1/Tickets";
@@ -80,6 +87,7 @@ namespace Sahinbey.Siramatik
             {
                 PD.Dispose();
             }
+           txtCallTime.Text= DateTime.Now.ToString();//en son numara alýnan zaman
         }
 
         private async void btnOncelikli_Click(object sender, EventArgs e)

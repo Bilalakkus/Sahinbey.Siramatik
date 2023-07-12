@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -64,12 +65,38 @@ namespace Sahinbey.Siramatik
 
         private void Master_Load(object sender, EventArgs e)
         {
-            if (ActiveUser.AdSoyad == null)
-            {
-                FrmLogin login = new FrmLogin();
-                login.ShowDialog();
 
+            
+            //if (ActiveUser.AdSoyad == null)
+            //{
+            //    FrmLogin login = new FrmLogin();
+            //    login.ShowDialog();
+
+            //}
+            string bilgisayarAdi = Dns.GetHostName();
+            //label1.Text = "Bilgisayar Adı: " + bilgisayarAdi;
+            string ipAdresi = Dns.GetHostByName(bilgisayarAdi).AddressList[0].ToString();
+            
+            if (ipAdresi != "192.168.3.240")
+            {
+                FrmScreen frmScreen = new FrmScreen();
+                frmScreen.Show();
+                this.WindowState = FormWindowState.Minimized;
             }
+            else if (ipAdresi != "10.10.10.27")
+            {
+                FrmScreenIsMovie frmScreen = new FrmScreenIsMovie();
+                frmScreen.Show();
+                this.WindowState = FormWindowState.Minimized;
+            }
+            else
+            {
+                FrmNumaraAl frmNumara = new FrmNumaraAl();
+                frmNumara.Show();
+                this.WindowState = FormWindowState.Minimized;
+            }
+            //label2.Text = "IP Adresi " + ipAdresi;
+            
 
         }
 

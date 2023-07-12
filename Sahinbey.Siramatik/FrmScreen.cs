@@ -15,6 +15,7 @@ using System.Media;
 using Sahinbey.Siramatik.Constants;
 using Sahinbey.Siramatik.Services;
 using Sahinbey.Siramatik.DTOs.TicketDTOs;
+using System.IO;
 
 namespace Sahinbey.Siramatik
 {
@@ -139,7 +140,7 @@ namespace Sahinbey.Siramatik
         }
         private void AddList(IEnumerable<ResponseTicketDto> list)
         {
-            ListClear();
+            ListClear(list.Count());
             int i = 0;
             foreach (var item in list)
             {
@@ -203,8 +204,92 @@ namespace Sahinbey.Siramatik
             };
 
         }
-        private void ListClear()
+        private void ListClear(int count)
         {
+            if (count == 0)
+            {
+                pnlList1.Visible = false;
+                pnlList2.Visible = false;
+                pnlList3.Visible = false;
+                pnlList4.Visible = false;
+                pnlList5.Visible = false;
+                pnlList6.Visible = false;
+                pnlList7.Visible = false;
+                pnlList8.Visible = false;
+                pnlList9.Visible = false;
+                pnlList10.Visible = false;
+            }
+            for (int i = 0; i < count; i++)
+            {
+                switch (count)
+                {
+                    case 1:
+                        pnlList2.Visible = false;
+                        pnlList3.Visible = false;
+                        pnlList4.Visible = false;
+                        pnlList5.Visible = false;
+                        pnlList6.Visible = false;
+                        pnlList7.Visible = false;
+                        pnlList8.Visible = false;
+                        pnlList9.Visible = false;
+                        pnlList10.Visible = false;
+                        break;
+                    case 2:
+                        pnlList3.Visible = false;
+                        pnlList4.Visible = false;
+                        pnlList5.Visible = false;
+                        pnlList6.Visible = false;
+                        pnlList7.Visible = false;
+                        pnlList8.Visible = false;
+                        pnlList9.Visible = false;
+                        pnlList10.Visible = false;
+                        break;
+                    case 3:
+                        pnlList4.Visible = false;
+                        pnlList5.Visible = false;
+                        pnlList6.Visible = false;
+                        pnlList7.Visible = false;
+                        pnlList8.Visible = false;
+                        pnlList9.Visible = false;
+                        pnlList10.Visible = false;
+                        break;
+                    case 4:
+                        pnlList5.Visible = false;
+                        pnlList6.Visible = false;
+                        pnlList7.Visible = false;
+                        pnlList8.Visible = false;
+                        pnlList9.Visible = false;
+                        pnlList10.Visible = false;
+                        break;
+                    case 5:
+                        pnlList6.Visible = false;
+                        pnlList7.Visible = false;
+                        pnlList8.Visible = false;
+                        pnlList9.Visible = false;
+                        pnlList10.Visible = false;
+                        break;
+                    case 6:
+                        pnlList7.Visible = false;
+                        pnlList8.Visible = false;
+                        pnlList9.Visible = false;
+                        pnlList10.Visible = false;
+                        break;
+                    case 7:
+                        pnlList8.Visible = false;
+                        pnlList9.Visible = false;
+                        pnlList10.Visible = false;
+                        break;
+                    case 8:
+                        pnlList9.Visible = false;
+                        pnlList10.Visible = false;
+                        break;
+                    case 9:
+                        pnlList10.Visible = false;
+                        break;
+                    default:
+                        break;
+                }
+            }
             //lblList1.Text = "";
             //lblList2.Text = "";
             //lblList3.Text = "";
@@ -241,7 +326,7 @@ namespace Sahinbey.Siramatik
         private void timer3_Tick(object sender, EventArgs e)
         {
 
-            if (Convert.ToInt16(txtRedCount.Text) > 0 && Convert.ToInt16(txtRedCount.Text)<10)
+            if (Convert.ToInt16(txtRedCount.Text) > 0 && Convert.ToInt16(txtRedCount.Text) < 10)
             {
                 pnlCallFirst.BackColor = pnlCallFirst.BackColor == Color.Red ? Color.White : Color.Red;
                 txtRedCount.Text = (Convert.ToInt16(txtRedCount.Text) + 1).ToString();

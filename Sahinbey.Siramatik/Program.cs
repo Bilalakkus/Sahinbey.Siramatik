@@ -15,7 +15,7 @@ namespace Sahinbey.Siramatik
 
             ApplicationConfiguration.Initialize();
             ApplicationServiceSettings.RegisterAllService();
-            Application.Run(new Master());
+            Application.Run(new FrmNumaraAl());
         }
     }
 }

@@ -42,6 +42,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.txtCallTime = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -137,7 +138,7 @@
             this.btnEmlak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmlak.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.btnEmlak.ForeColor = System.Drawing.Color.White;
-            this.btnEmlak.Location = new System.Drawing.Point(204, 293);
+            this.btnEmlak.Location = new System.Drawing.Point(118, 293);
             this.btnEmlak.Name = "btnEmlak";
             this.btnEmlak.Size = new System.Drawing.Size(703, 176);
             this.btnEmlak.TabIndex = 4;
@@ -153,7 +154,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(204, 514);
+            this.button4.Location = new System.Drawing.Point(118, 514);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(703, 176);
             this.button4.TabIndex = 6;
@@ -169,7 +170,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(204, 748);
+            this.button5.Location = new System.Drawing.Point(118, 748);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(703, 176);
             this.button5.TabIndex = 7;
@@ -185,7 +186,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(204, 972);
+            this.button2.Location = new System.Drawing.Point(118, 972);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(703, 176);
             this.button2.TabIndex = 8;
@@ -193,12 +194,21 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Visible = false;
             // 
+            // txtCallTime
+            // 
+            this.txtCallTime.Location = new System.Drawing.Point(12, 239);
+            this.txtCallTime.Name = "txtCallTime";
+            this.txtCallTime.Size = new System.Drawing.Size(100, 23);
+            this.txtCallTime.TabIndex = 9;
+            this.txtCallTime.Visible = false;
+            // 
             // FrmNumaraAl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(941, 1232);
+            this.Controls.Add(this.txtCallTime);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -216,6 +226,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -233,5 +244,6 @@
         private Button button5;
         private Button button2;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private TextBox txtCallTime;
     }
 }

@@ -27,7 +27,7 @@ namespace Sahinbey.Siramatik.Utilities
                     string newNumber = "00" + sayi;
                     return newNumber;
                 }
-                else if (sayi < 100)
+                else if (sayi > 10 && sayi < 100)
                 {
                     string newNumber = "0" + sayi;
                     return newNumber;
@@ -42,16 +42,17 @@ namespace Sahinbey.Siramatik.Utilities
                     string newNumber = "000" + sayi;
                     return newNumber;
                 }
-                else if (sayi < 100)
+                else if (sayi > 10 && sayi < 100)
                 {
                     string newNumber = "00" + sayi;
                     return newNumber;
                 }
-                else if (sayi < 1000)
+                else if (sayi > 99 && sayi < 1000)
                 {
-                    string newNumber = "000" + sayi;
+                    string newNumber = "0" + sayi;
                     return newNumber;
                 }
+
                 else
                     return sayi.ToString();
             }

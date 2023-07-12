@@ -132,9 +132,10 @@
             // 
             // txtRedCount
             // 
-            this.txtRedCount.Location = new System.Drawing.Point(224, 31);
+            this.txtRedCount.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World);
+            this.txtRedCount.Location = new System.Drawing.Point(63, 67);
             this.txtRedCount.Name = "txtRedCount";
-            this.txtRedCount.Size = new System.Drawing.Size(100, 1157);
+            this.txtRedCount.Size = new System.Drawing.Size(60, 39);
             this.txtRedCount.TabIndex = 13;
             this.txtRedCount.Text = "0";
             this.txtRedCount.Visible = false;
@@ -142,9 +143,9 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(466, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(408, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(939, 123);
+            this.pictureBox1.Size = new System.Drawing.Size(964, 135);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
@@ -293,10 +294,10 @@
             // 
             // pnlList10
             // 
-            this.pnlList10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList10.BackColor = System.Drawing.Color.White;
             this.pnlList10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList10.Controls.Add(this.lblList10);
-            this.pnlList10.Location = new System.Drawing.Point(7, 776);
+            this.pnlList10.Location = new System.Drawing.Point(8, 776);
             this.pnlList10.Name = "pnlList10";
             this.pnlList10.Size = new System.Drawing.Size(468, 73);
             this.pnlList10.TabIndex = 12;
@@ -305,19 +306,19 @@
             // lblList10
             // 
             this.lblList10.AutoSize = true;
-            this.lblList10.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList10.Location = new System.Drawing.Point(164, -16);
+            this.lblList10.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList10.Location = new System.Drawing.Point(164, -4);
             this.lblList10.Name = "lblList10";
-            this.lblList10.Size = new System.Drawing.Size(162, 99);
+            this.lblList10.Size = new System.Drawing.Size(161, 84);
             this.lblList10.TabIndex = 0;
             this.lblList10.Text = "000";
             // 
             // pnlList9
             // 
-            this.pnlList9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList9.BackColor = System.Drawing.Color.White;
             this.pnlList9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList9.Controls.Add(this.lblList9);
-            this.pnlList9.Location = new System.Drawing.Point(7, 700);
+            this.pnlList9.Location = new System.Drawing.Point(8, 700);
             this.pnlList9.Name = "pnlList9";
             this.pnlList9.Size = new System.Drawing.Size(468, 73);
             this.pnlList9.TabIndex = 11;
@@ -326,19 +327,19 @@
             // lblList9
             // 
             this.lblList9.AutoSize = true;
-            this.lblList9.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList9.Location = new System.Drawing.Point(164, -18);
+            this.lblList9.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList9.Location = new System.Drawing.Point(164, -6);
             this.lblList9.Name = "lblList9";
-            this.lblList9.Size = new System.Drawing.Size(162, 99);
+            this.lblList9.Size = new System.Drawing.Size(161, 84);
             this.lblList9.TabIndex = 0;
             this.lblList9.Text = "000";
             // 
             // pnlList8
             // 
-            this.pnlList8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList8.BackColor = System.Drawing.Color.White;
             this.pnlList8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList8.Controls.Add(this.lblList8);
-            this.pnlList8.Location = new System.Drawing.Point(7, 624);
+            this.pnlList8.Location = new System.Drawing.Point(8, 624);
             this.pnlList8.Name = "pnlList8";
             this.pnlList8.Size = new System.Drawing.Size(468, 73);
             this.pnlList8.TabIndex = 10;
@@ -347,16 +348,16 @@
             // lblList8
             // 
             this.lblList8.AutoSize = true;
-            this.lblList8.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList8.Location = new System.Drawing.Point(164, -18);
+            this.lblList8.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList8.Location = new System.Drawing.Point(164, -6);
             this.lblList8.Name = "lblList8";
-            this.lblList8.Size = new System.Drawing.Size(162, 99);
+            this.lblList8.Size = new System.Drawing.Size(161, 84);
             this.lblList8.TabIndex = 0;
             this.lblList8.Text = "000";
             // 
             // pnlList7
             // 
-            this.pnlList7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList7.BackColor = System.Drawing.Color.White;
             this.pnlList7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList7.Controls.Add(this.lblList7);
             this.pnlList7.Location = new System.Drawing.Point(8, 548);
@@ -368,19 +369,19 @@
             // lblList7
             // 
             this.lblList7.AutoSize = true;
-            this.lblList7.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList7.Location = new System.Drawing.Point(163, -18);
+            this.lblList7.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList7.Location = new System.Drawing.Point(163, -6);
             this.lblList7.Name = "lblList7";
-            this.lblList7.Size = new System.Drawing.Size(162, 99);
+            this.lblList7.Size = new System.Drawing.Size(161, 84);
             this.lblList7.TabIndex = 0;
             this.lblList7.Text = "000";
             // 
             // pnlList6
             // 
-            this.pnlList6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList6.BackColor = System.Drawing.Color.White;
             this.pnlList6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList6.Controls.Add(this.lblList6);
-            this.pnlList6.Location = new System.Drawing.Point(7, 472);
+            this.pnlList6.Location = new System.Drawing.Point(8, 472);
             this.pnlList6.Name = "pnlList6";
             this.pnlList6.Size = new System.Drawing.Size(468, 73);
             this.pnlList6.TabIndex = 8;
@@ -389,16 +390,16 @@
             // lblList6
             // 
             this.lblList6.AutoSize = true;
-            this.lblList6.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList6.Location = new System.Drawing.Point(164, -18);
+            this.lblList6.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList6.Location = new System.Drawing.Point(164, -6);
             this.lblList6.Name = "lblList6";
-            this.lblList6.Size = new System.Drawing.Size(162, 99);
+            this.lblList6.Size = new System.Drawing.Size(161, 84);
             this.lblList6.TabIndex = 0;
             this.lblList6.Text = "000";
             // 
             // pnlList5
             // 
-            this.pnlList5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList5.BackColor = System.Drawing.Color.White;
             this.pnlList5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList5.Controls.Add(this.lblList5);
             this.pnlList5.Location = new System.Drawing.Point(8, 397);
@@ -410,16 +411,16 @@
             // lblList5
             // 
             this.lblList5.AutoSize = true;
-            this.lblList5.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList5.Location = new System.Drawing.Point(163, -18);
+            this.lblList5.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList5.Location = new System.Drawing.Point(163, -6);
             this.lblList5.Name = "lblList5";
-            this.lblList5.Size = new System.Drawing.Size(162, 99);
+            this.lblList5.Size = new System.Drawing.Size(161, 84);
             this.lblList5.TabIndex = 0;
             this.lblList5.Text = "000";
             // 
             // pnlList4
             // 
-            this.pnlList4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList4.BackColor = System.Drawing.Color.White;
             this.pnlList4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList4.Controls.Add(this.lblList4);
             this.pnlList4.Location = new System.Drawing.Point(8, 322);
@@ -431,16 +432,16 @@
             // lblList4
             // 
             this.lblList4.AutoSize = true;
-            this.lblList4.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList4.Location = new System.Drawing.Point(163, -19);
+            this.lblList4.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList4.Location = new System.Drawing.Point(163, -7);
             this.lblList4.Name = "lblList4";
-            this.lblList4.Size = new System.Drawing.Size(162, 99);
+            this.lblList4.Size = new System.Drawing.Size(161, 84);
             this.lblList4.TabIndex = 0;
             this.lblList4.Text = "000";
             // 
             // pnlList3
             // 
-            this.pnlList3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList3.BackColor = System.Drawing.Color.White;
             this.pnlList3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList3.Controls.Add(this.lblList3);
             this.pnlList3.Location = new System.Drawing.Point(8, 247);
@@ -452,19 +453,19 @@
             // lblList3
             // 
             this.lblList3.AutoSize = true;
-            this.lblList3.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList3.Location = new System.Drawing.Point(163, -18);
+            this.lblList3.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList3.Location = new System.Drawing.Point(163, -6);
             this.lblList3.Name = "lblList3";
-            this.lblList3.Size = new System.Drawing.Size(162, 99);
+            this.lblList3.Size = new System.Drawing.Size(161, 84);
             this.lblList3.TabIndex = 0;
             this.lblList3.Text = "000";
             // 
             // pnlList2
             // 
-            this.pnlList2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList2.BackColor = System.Drawing.Color.White;
             this.pnlList2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList2.Controls.Add(this.lblList2);
-            this.pnlList2.Location = new System.Drawing.Point(7, 172);
+            this.pnlList2.Location = new System.Drawing.Point(8, 172);
             this.pnlList2.Name = "pnlList2";
             this.pnlList2.Size = new System.Drawing.Size(468, 73);
             this.pnlList2.TabIndex = 4;
@@ -473,21 +474,23 @@
             // lblList2
             // 
             this.lblList2.AutoSize = true;
-            this.lblList2.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList2.Location = new System.Drawing.Point(164, -18);
+            this.lblList2.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList2.Location = new System.Drawing.Point(164, -6);
             this.lblList2.Name = "lblList2";
-            this.lblList2.Size = new System.Drawing.Size(162, 99);
+            this.lblList2.Size = new System.Drawing.Size(161, 84);
             this.lblList2.TabIndex = 0;
             this.lblList2.Text = "000";
             // 
             // pnlList1
             // 
-            this.pnlList1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlList1.BackColor = System.Drawing.Color.White;
+            this.pnlList1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pnlList1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList1.Controls.Add(this.lblList1);
             this.pnlList1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pnlList1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlList1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pnlList1.Location = new System.Drawing.Point(7, 97);
+            this.pnlList1.Location = new System.Drawing.Point(8, 97);
             this.pnlList1.Name = "pnlList1";
             this.pnlList1.Size = new System.Drawing.Size(468, 73);
             this.pnlList1.TabIndex = 3;
@@ -496,10 +499,10 @@
             // lblList1
             // 
             this.lblList1.AutoSize = true;
-            this.lblList1.Font = new System.Drawing.Font("Segoe UI", 55F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList1.Location = new System.Drawing.Point(163, -18);
+            this.lblList1.Font = new System.Drawing.Font("Arial", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList1.Location = new System.Drawing.Point(163, -6);
             this.lblList1.Name = "lblList1";
-            this.lblList1.Size = new System.Drawing.Size(162, 99);
+            this.lblList1.Size = new System.Drawing.Size(161, 84);
             this.lblList1.TabIndex = 0;
             this.lblList1.Text = "000";
             // 
